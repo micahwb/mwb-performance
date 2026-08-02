@@ -673,3 +673,12 @@ footer.site h4::before { content: ''; display: inline-block; width: 11px; height
 .mode-chips span { background: rgba(6,5,3,0.82); border: 1px solid var(--gold-fill); border-radius: 3px; color: var(--bone); font-size: 0.66rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; padding: 9px 13px; }
 @media (max-width: 940px) { .hero-portrait { min-height: 46svh; } }
 @media (max-width: 640px) { .hero-portrait { min-height: 300px; display: block; } }
+
+/* flavour glyph wiring */
+.show-up { display: inline-flex; align-items: center; gap: 8px; }
+.show-up img { width: 18px; height: 18px; }
+.mq-glyph { display: inline-block; width: 15px; height: 15px; vertical-align: -2px; margin: 0 4px; }
+.marquee span { display: inline-flex; align-items: center; gap: 12px; }
+.mode-chips span { display: inline-flex; align-items: center; gap: 7px; }
+.mode-chips img { width: 14px; height: 14px; }
+.jstep .jcap { width: 30px; height: 30px; float: right; margin-top: -6px; }

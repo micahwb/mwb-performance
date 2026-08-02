@@ -17,7 +17,7 @@ Search the `src/` folder for `[EDIT]`:
 
 | Tag | File | What to change |
 |---|---|---|
-| `[EDIT-EMAIL]` | `src/components.jsx` | Your real email in `CONFIG.EMAIL`. Check `hello@mwbperformance.co` actually exists first. |
+| `[EDIT-EMAIL]` | `src/components.jsx` | Your real email in `CONFIG.EMAIL`. Check `hello@mwbperformance.com` actually exists first. |
 | `[EDIT-FORM]` | `src/components.jsx` | Formspree endpoint — see step 2. |
 | `[EDIT-PRICE]` | `src/pages/Coaching.jsx` | The $65/$79/$149 prices are **placeholders** — set your real ones. |
 | `[EDIT-QUOTES]` | `src/pages/Home.jsx` + `src/pages/Results.jsx` | Replace example testimonials with real client quotes (with permission). **Never launch with the examples.** |
@@ -46,7 +46,7 @@ This repo includes a GitHub Action that builds and deploys the site every time y
 3. Live in ~2 minutes at `https://YOUR-USERNAME.github.io/mwb-performance/`.
 
 ## 5. (Recommended) your own domain
-Buy `mwbperformance.co.nz` (~NZ$20/yr) → **Settings → Pages → Custom domain** → follow the DNS steps. Then update the `canonical` and `og:image` URLs in `index.html`.
+Buy `mwbperformance.com` (~NZ$20/yr) → **Settings → Pages → Custom domain** → follow the DNS steps. Then update the `canonical` and `og:image` URLs in `index.html`.
 
 ## Your brand kit
 - **Colours:** Black `#000000` · Warm off-white `#F2EEE4` · Bronze `#7B5D20` (with lighter gold `#C9A14B` for text accents on dark)

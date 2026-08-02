@@ -7,7 +7,7 @@ export const CONFIG = {
   /* [EDIT-FORM] paste your Formspree endpoint, e.g. "https://formspree.io/f/abcdwxyz" */
   FORM_ENDPOINT: '',
   /* [EDIT-EMAIL] your real email */
-  EMAIL: 'hello@mwbperformance.co',
+  EMAIL: 'hello@mwbperformance.com',
   INSTAGRAM: 'https://www.instagram.com/mwbcoaching/',
   LINKEDIN: 'https://www.linkedin.com/in/micah-barker-4b527b338/',
 }
@@ -162,7 +162,7 @@ export const Nav = () => {
 /* ── Marquee ─────────────────────────────────────────────────── */
 export const Marquee = () => {
   const items = ['Build muscle', 'Gain strength', 'Lose fat', 'Train anywhere', 'Beginner friendly', '1:1 coaching']
-  const strip = items.map((s, i) => <span key={i}>{s} <i>◆</i></span>)
+  const strip = items.map((s, i) => <span key={i}>{s} <img className="mq-glyph" src="./icons/glyph-plate.png" alt="" /></span>)
   return (
     <div className="marquee" aria-hidden="true">
       <div className="marquee-track">{strip}{strip}</div>
@@ -233,8 +233,7 @@ export const Footer = () => (
       <div className="foot-mark" aria-hidden="true">MWB PERFORMANCE</div>
       <div className="foot-bottom">
         <span>© 2026 MWB Performance</span>
-        <Everfit />
-        <span>Built for people who show up</span>
+        <span className="show-up"><img src="./icons/glyph-sneaker.png" alt="" />Built for people who show up</span>
       </div>
     </div>
   </footer>
