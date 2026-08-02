@@ -1,0 +1,185 @@
+{
+  "headings": [
+    "H1: Build muscle, gain strength, feel confident — from anywhere.",
+    "H2: Bringing confidence to beginners — and building it from there.",
+    "H2: 1:1 online coaching, built around you.",
+    "H3: Custom gym programs",
+    "H3: Weekly check-ins via Zoom",
+    "H3: DM support between sessions",
+    "H3: 1:1 online coaching",
+    "H3: Specialising in resistance training",
+    "H2: Book your free intro call."
+  ],
+  "links": [
+    "MWB. Performance -> https://personal-training-we-wju2.bolt.host/#top",
+    "About -> https://personal-training-we-wju2.bolt.host/#about",
+    "Coaching -> https://personal-training-we-wju2.bolt.host/#coaching",
+    "Contact -> https://personal-training-we-wju2.bolt.host/#contact",
+    "Book a free intro call -> https://personal-training-we-wju2.bolt.host/#contact",
+    "Start with a free intro call -> https://personal-training-we-wju2.bolt.host/#contact",
+    "Explore coaching options -> https://personal-training-we-wju2.bolt.host/#coaching",
+    "@mwbcoaching -> https://instagram.com/mwbcoaching",
+    "Start online coaching -> https://personal-training-we-wju2.bolt.host/#contact",
+    "Connect on LinkedIn -> https://www.linkedin.com/in/micah-barker-4b527b338/",
+    "MWB. Performance -> https://personal-training-we-wju2.bolt.host/#top",
+    "About -> https://personal-training-we-wju2.bolt.host/#about",
+    "Coaching -> https://personal-training-we-wju2.bolt.host/#coaching",
+    "Contact -> https://personal-training-we-wju2.bolt.host/#contact",
+    "@mwbcoaching -> https://instagram.com/mwbcoaching",
+    "Micah Barker -> https://www.linkedin.com/in/micah-barker-4b527b338/"
+  ],
+  "imgs": [
+    {
+      "src": "https://personal-training-we-wju2.bolt.host/images/gym_1.jpg",
+      "alt": "Personal training session in progress",
+      "w": 1206
+    },
+    {
+      "src": "https://personal-training-we-wju2.bolt.host/images/gym_2.jpg",
+      "alt": "Coach with a client",
+      "w": 1206
+    }
+  ],
+  "forms": [
+    "INPUT:text, INPUT:email, INPUT:tel, BUTTON:button, BUTTON:button, BUTTON:button, BUTTON:button, BUTTON:button, BUTTON:button, BUTTON:button, BUTTON:button, TEXTAREA:textarea, BUTTON:submit"
+  ],
+  "consoleErrors": [],
+  "mobileHorizontalScroll": true
+}
+
+=== FULL PAGE TEXT ===
+MWB. Performance
+About
+Coaching
+Contact
+Book a free intro call
+Now accepting new clients — 1:1 online coaching
+Build muscle, gain strength, feel confident — from anywhere.
+
+1:1 online coaching with custom gym programs, weekly check-ins via Zoom and DMs, and real accountability. Specialising in resistance training for hypertrophy, strength and fat loss.
+
+Start with a free intro call
+Explore coaching options
+@mwbcoaching
+
+Online coaching built around you
+
+THIS WEEK
+
+Weekly check-in · Zoom
+
+Custom program
+Week 4 of 12
+
+1:1
+
+online coaching
+
+Qualifications
+
+H&F Personal Trainer L4 · Studying L5
+
+ABOUT THE COACH
+
+Bringing confidence to beginners — and building it from there.
+
+I'm Christchurch-based, specialising in resistance training that targets hypertrophy, strength and fat loss. My focus is on bringing confidence to beginners — helping people build muscle, tone up, gain strength, and feel more confident in themselves.
+
+I hold my qualification in Health & Fitness Personal Trainer (Level 4), and I'm currently studying my Advanced Health & Fitness Coach (Level 5). Everything I coach is built on proper education and real-world results — not guesswork.
+
+All coaching is delivered 1:1 online, so you can train from your own gym on your schedule while still getting the accountability and guidance you need to progress.
+
+Level 4
+
+Health & Fitness Personal Trainer
+
+Level 5
+
+Studying Advanced Health & Fitness Coach
+
+1:1
+
+Online coaching
+
+CHCH
+
+Christchurch, NZ
+
+COACHING
+
+1:1 online coaching, built around you.
+
+Custom gym programs, weekly check-ins via Zoom, and DM support between sessions. Everything you need to build muscle, gain strength and feel more confident — delivered fully online.
+
+Custom gym programs
+
+Personalised training programs built around your goals, equipment and schedule — updated regularly as you progress.
+
+Learn more
+Weekly check-ins via Zoom
+
+A dedicated weekly video call to review your week, adjust your program, and keep you moving forward.
+
+DM support between sessions
+
+Questions, form checks and motivation any day through direct messages — you are never training alone.
+
+1:1 online coaching
+
+Fully remote coaching designed for your gym, your pace and your life. Train anywhere with full support.
+
+Specialising in resistance training
+
+Christchurch-based and focused on helping beginners build confidence in the gym. Whether your goal is muscle, strength or fat loss, your program is designed to get you there safely.
+
+Start online coaching
+Hypertrophy & muscle building
+Strength training
+Fat loss & body recomposition
+Beginner confidence & technique
+
+GET STARTED
+
+Book your free intro call.
+
+Tell me a little about your goals and I'll reach out within 24 hours to schedule a free, no-pressure call. We'll talk about where you are, where you want to go, and how 1:1 online coaching can get you there.
+
+A 20-minute call to understand your goals
+An honest recommendation — even if it is not me
+No pressure to sign up for anything
+Connect on LinkedIn
+Name *
+Email *
+Phone (optional)
+What is your main goal?
+Build muscle
+Get stronger
+Lose fat
+Tone up
+Beginner confidence
+General fitness
+Preferred coaching
+Online coaching
+I'm not sure yet
+Anything else I should know?
+Request my free intro call
+MWB. Performance
+
+1:1 online personal coaching that meets you where you are. Custom gym programs, weekly check-ins via Zoom and DMs, and real accountability — train from anywhere.
+
+Explore
+
+About
+Coaching
+Contact
+
+Get in touch
+
+hello@mwbperformance.co
+Christchurch, New Zealand
+@mwbcoaching
+Micah Barker
+
+© 2026 MWB Performance. All rights reserved.
+
+Built for people who show up.

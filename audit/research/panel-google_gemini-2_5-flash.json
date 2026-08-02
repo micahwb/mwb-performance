@@ -1,0 +1,46 @@
+{
+ "id": "gen-1785652599-lXoIAkPMxo6D63DmO2EZ",
+ "object": "chat.completion",
+ "created": 1785652599,
+ "model": "google/gemini-2.5-flash",
+ "provider": "Google",
+ "system_fingerprint": null,
+ "service_tier": "default",
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "STOP",
+   "message": {
+    "role": "assistant",
+    "content": "Here are 5 highest-impact improvements for MWB Performance, ranked:\n\n1.  **Fix Contact Form & Favicon:** Immediately resolve the broken contact form (essential for lead capture) and favicon (professionalism). These are critical technical blockers.\n2.  **Add a Professional Coach Photo:** Replace generic stock images with a clear, friendly photo of Micah. This builds trust and personalization instantly for a solo coach.\n3.  **Introduce an \"About Micah\" Section:** Detail his experience, Level 4 PT status, and aspirations for Level 5. Emphasize his *passion* for helping beginners. This addresses the \"no coach info\" and lack of trust.\n4.  **Create a Simple FAQ & Pricing Teaser:** Address common beginner questions (e.g., \"Do I need a gym?\", \"How long before I see results?\") and offer a *range* or \"packages starting from...\" to manage expectations and qualify leads.\n5.  **Gather & Display Testimonials:** Even one or two genuine testimonials from current/past clients (with consent) would significantly boost credibility and social proof.\n\n**Rewritten Hero Headline + Subline:**\n\n**Headline:** **\"Unlock Your Strength: Beginner-Friendly Online Coaching for Lasting Results.\"**\n**Subline:** **\"Micah Barker, your Christchurch PT, guides you to build muscle, boost strength, or achieve sustainable fat loss, one step at a time.\"**",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 149,
+  "completion_tokens": 299,
+  "total_tokens": 448,
+  "cost": 0.0007922,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.0007922,
+   "upstream_inference_prompt_cost": 4.47e-05,
+   "upstream_inference_completions_cost": 0.0007475
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

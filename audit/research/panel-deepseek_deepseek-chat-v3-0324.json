@@ -1,0 +1,46 @@
+{
+ "id": "gen-1785652599-uxYZ1yo0olSMqi2ECDeC",
+ "object": "chat.completion",
+ "created": 1785652599,
+ "model": "deepseek/deepseek-chat-v3-0324",
+ "provider": "Crusoe",
+ "system_fingerprint": null,
+ "service_tier": null,
+ "choices": [
+  {
+   "index": 0,
+   "logprobs": null,
+   "finish_reason": "stop",
+   "native_finish_reason": "stop",
+   "message": {
+    "role": "assistant",
+    "content": "### **Top 5 High-Impact Improvements for MWB Performance:**  \n\n1. **Fix Leads Database Access**  \n   Highest priority\u2014ensure contact form submissions reach the coach directly, not an inaccessible database.  \n\n2. **Add Transparent Pricing & Free Intro Call CTA**  \n   \u201c1:1 Online Coaching from $X/week \u2013 [Book a Free Intro Call]\u201d (button). Removes friction for potential clients.  \n\n3. **Replace Stock Images**  \n   Add real photos of the coach (training/clients) and a simple video intro for trust-building.  \n\n4. **Add a Single Testimonial Section**  \n   Even one before/after or quote (e.g., *\u201cMicah tailored my program around my knee pain\u2014strength up 20% in 8 weeks!\u201d*) boosts credibility.  \n\n5. **Mobile Optimization**  \n   Eliminate horizontal scrolling\u2014test on real devices (likely overflow CSS issue).  \n\n---  \n\n### **Rewritten Hero Section:**  \n**Headline:** *\u201cBeginner-Friendly Online Coaching to Build Strength, Not Confusion\u201d*  \n**Subline:** *\u201cCustom training & nutrition for hypertrophy, fat loss, or raw strength\u2014without gym bro science. Start with a free intro call.\u201d*  \n\n*(Prioritizes beginner pain points + highlights free CTA immediately.)*  \n\n---  \n\n**Bonus:** A favicon fix and FAQ (\u201cHow does payment work?\u201d / \u201cDo I need equipment?\u201d) are low-effort trust-builders for later.",
+    "refusal": null,
+    "reasoning": null
+   }
+  }
+ ],
+ "usage": {
+  "prompt_tokens": 152,
+  "completion_tokens": 312,
+  "total_tokens": 464,
+  "cost": 0.000544,
+  "is_byok": false,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "cache_write_tokens": 0,
+   "audio_tokens": 0,
+   "video_tokens": 0
+  },
+  "cost_details": {
+   "upstream_inference_cost": 0.000544,
+   "upstream_inference_prompt_cost": 7.6e-05,
+   "upstream_inference_completions_cost": 0.000468
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 0,
+   "image_tokens": 0,
+   "audio_tokens": 0
+  }
+ }
+}

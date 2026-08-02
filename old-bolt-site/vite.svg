@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MWB Performance — Online & In-Person Personal Training</title>
+    <meta name="description" content="MWB Performance — 1:1 online personal coaching. Custom gym programs, weekly check-ins via Zoom and DMs. Specialising in resistance training for hypertrophy, strength and fat loss. Christchurch, New Zealand." />
+    <meta property="og:title" content="MWB Performance — Personal Training" />
+    <meta property="og:description" content="MWB Performance — 1:1 online personal coaching tailored to your goals. Christchurch, New Zealand." />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/assets/index-BIv4SlW5.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BdxLY6ti.css">
+  <script async src="https://bolt.new/badge.js?s=691a6412-f349-430e-bbcf-61f227f8108c"></script><script async src="https://bolt.new/deployed-preview-script.js?origin=https%3A%2F%2Fbolt.new"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
