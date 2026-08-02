@@ -119,17 +119,17 @@ export default function Home() {
           <Reveal><h2>Built for people starting out —<br />not for gym veterans.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
-              <div className="rule" />
+              <img className="cell-ico" src="./icons/ico-door.png" alt="" />
               <h3>"I don't know where to start"</h3>
               <p>You want to lift weights but the gym floor feels intimidating and every program online says something different.</p>
             </Item>
             <Item className="cell">
-              <div className="rule" />
+              <img className="cell-ico" src="./icons/ico-restart.png" alt="" />
               <h3>"I start, then fall off"</h3>
               <p>You've trained before but without accountability it never sticks past week three. A weekly check-in changes that.</p>
             </Item>
             <Item className="cell">
-              <div className="rule" />
+              <img className="cell-ico" src="./icons/ico-target.png" alt="" />
               <h3>"I want real results"</h3>
               <p>Muscle, strength, fat loss, tone — you want a plan built for your goal, your equipment and your actual schedule.</p>
             </Item>
