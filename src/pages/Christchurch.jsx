@@ -28,7 +28,7 @@ export default function Christchurch() {
             <Item className="cell">
               <span className="idx">01</span>
               <h3>Local &amp; in person</h3>
-              <p>Real 1:1 sessions in Christchurch — hands-on technique coaching, immediate feedback, and a training plan built around your week, not a template.</p>
+              <p>Real 1:1 sessions throughout Christchurch — hands-on technique coaching, immediate feedback, and a training plan built around your week, not a template.</p>
             </Item>
             <Item className="cell">
               <span className="idx">02</span>
@@ -53,7 +53,7 @@ export default function Christchurch() {
             <div style={{ marginTop: 40 }}>
               <details>
                 <summary>Where in Christchurch do you train clients?</summary>
-                <div className="a">In-person sessions run at a well-equipped Christchurch gym — we'll confirm the best location and times for you on your intro call. {/* [EDIT] name Micah's gym + suburbs served */}</div>
+                <div className="a">I train clients throughout Christchurch — we'll lock in the gym location and times that suit you best on your intro call. {/* [EDIT] name Micah's gym + suburbs served */}</div>
               </details>
               <details>
                 <summary>How much does a personal trainer in Christchurch cost?</summary>
