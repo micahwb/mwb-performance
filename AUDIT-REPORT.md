@@ -94,3 +94,7 @@ Round 2 verification (`audit/gemini-verify-pass.md`): fixes confirmed. Final sco
 - Mobile sticky "Book free call" bar after first scroll; form-first contact layout on mobile.
 - Form: Formspree endpoint config + mailto fallback + IG DM escape hatch (leads always reach Micah).
 - Auto-deploy GitHub Action included; HashRouter so the site works on any static host with zero config.
+
+## v3.1 — Mint palette + logo round 2 (same day)
+- Accent switched from ember orange to the design system's **Foundry Mint `#B2FCE3`** per Henry; light sections now `#F5F5F5`, dark `#000`. Accent *text* on light sections uses ink (mint fails contrast on white); mint stays for CTAs, dark-section accents and decorative bars.
+- Logo round 2: Perplexity logo-strategy research (avoid dumbbell clichés; simple/ownable/16px; combo wordmark+mark) → 5 new concepts generated with **gpt-image-2** (flat output, no glow — unlike gpt-image-1): Ascent M, MB Ligature, Rising Bars W, Angular Koru, First-Step Door. In `brand/` + `~/Desktop/MICAH/micah logos/`.

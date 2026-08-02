@@ -1,6 +1,6 @@
 # MWB Performance — your website, ready to own 💪
 
-Hey Micah — this folder is your complete website: a 5-page React site with your own logo, brand system (ink black / bone / ember orange) and animations. No Bolt, no lock-in — you own all of it.
+Hey Micah — this folder is your complete website: a 5-page React site with your own brand system (black / off-white / mint) plus 5 logo concepts to choose from, and animations. No Bolt, no lock-in — you own all of it.
 
 ## 0. Preview it right now
 You need Node.js (free, nodejs.org). Then in Terminal, from this folder:
@@ -49,10 +49,10 @@ This repo includes a GitHub Action that builds and deploys the site every time y
 Buy `mwbperformance.co.nz` (~NZ$20/yr) → **Settings → Pages → Custom domain** → follow the DNS steps. Then update the `canonical` and `og:image` URLs in `index.html`.
 
 ## Your brand kit
-- **Colours:** Ink `#0B0A08` · Bone `#ECE7DC` · Ember `#FF4D24`
+- **Colours:** Black `#000000` · Off-white `#F5F5F5` · Mint `#B2FCE3`
 - **Font:** Archivo (free, Google Fonts) — headlines 900 uppercase, body 400
-- **Logo:** `public/mark.svg` (barbell mark — favicon + nav). AI-generated brand art (MWB + barbell renders for Instagram etc.) in `audit/logo-candidates/`.
-- **Rule:** black + bone + ONE ember accent. Sharp corners everywhere — never add border-radius.
+- **Logo:** pick your favourite of the 5 concepts in `brand/` (see `brand/CONCEPTS.md`), then it gets traced to SVG and dropped into `public/mark.svg` (current mark is a placeholder barbell in the same palette).
+- **Rule:** black + off-white + ONE mint accent. Sharp corners everywhere — never add border-radius.
 
 ## What's in this folder
 ```
