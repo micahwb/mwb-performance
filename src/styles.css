@@ -565,7 +565,7 @@ footer.site a:hover { color: var(--bone); }
 
 @media (max-width: 900px) { .collage { grid-template-columns: 1fr 1fr; } .fcard.c-main { grid-column: 1 / -1; } }
 /* nav icon balance */
-.ig-link { padding: 0; margin: 0 -4px; }
+.ig-link { padding: 0; margin: 0; display: inline-flex; align-items: center; justify-content: center; height: 100%; }
 .nav-links { align-items: center; }
 
 /* single offer card */
@@ -685,10 +685,10 @@ footer.site h4::before { content: ''; display: inline-block; width: 16px; height
 
 /* nav CTA — neon bronze outline, true white text */
 .nav-links .btn.sm {
-  color: #FFFFFF;
-  border: 1.5px solid var(--ember);
-  box-shadow: 0 0 14px rgba(201, 161, 75, 0.55), 0 0 3px rgba(201, 161, 75, 0.8), inset 0 0 8px rgba(201, 161, 75, 0.25);
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.35);
+  color: #FFFFFF !important;
+  border: 2px solid #D9AE5A !important;
+  box-shadow: 0 0 16px rgba(217, 174, 90, 0.65), 0 0 4px rgba(217, 174, 90, 0.9), inset 0 0 10px rgba(217, 174, 90, 0.3);
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.45);
 }
 .nav-links .btn.sm:hover {
   color: #FFFFFF;

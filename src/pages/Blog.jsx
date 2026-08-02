@@ -12,7 +12,7 @@ export function Blog() {
     <>
       <section className="page-head">
         <div className="wrap">
-          <Reveal><span className="label">The training log</span></Reveal>
+          <Reveal><span className="label">Coach's notes</span></Reveal>
           <Reveal><h1>Straight talk for <span className="accent">people starting out.</span></h1></Reveal>
           <Reveal><p className="sub" style={{ marginTop: 20 }}>
             No hacks, no 8-week miracles. The stuff I actually tell my clients.
@@ -67,7 +67,7 @@ export function Post() {
       <ReadProgress />
       <section className="page-head">
         <div className="wrap article">
-          <Reveal><span className="label">The training log</span></Reveal>
+          <Reveal><span className="label">Coach's notes</span></Reveal>
           <Reveal><h1 style={{ fontSize: 'clamp(1.9rem, 4.5vw, 3.2rem)' }}>{post.title}</h1></Reveal>
           <Reveal><p className="post-byline">By Micah Barker · {fmt(post.date)} · {post.minutes} min read</p></Reveal>
         </div>
