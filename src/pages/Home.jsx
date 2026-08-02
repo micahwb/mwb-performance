@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta } from '../components.jsx'
+import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta, Everfit } from '../components.jsx'
 
 const Float = ({ className, delay, children }) => (
   <motion.div
@@ -138,6 +138,42 @@ export default function Home() {
               <p>Weekly Zoom check-ins to review and adjust, plus DM support between sessions for questions and form checks.</p>
             </Item>
           </Stagger>
+        </div>
+      </section>
+
+      {/* COACHING APP — dark */}
+      <section className="app-section">
+        <div className="wrap app-grid">
+          <div>
+            <Reveal><span className="label">Your coaching app</span></Reveal>
+            <Reveal><h2>Your whole program,<br />in your pocket.</h2></Reveal>
+            <Reveal><p className="sub" style={{ margin: '18px 0 34px' }}>
+              Every session, exercise video, logged set and coach conversation lives in the
+              Everfit app — so the plan is always with you, and so am I.
+            </p></Reveal>
+            <Stagger className="app-feats">
+              <Item className="feat"><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
+              <Item className="feat"><b>Log every set</b><span>Weights, reps and PBs tracked — progress you can actually see.</span></Item>
+              <Item className="feat"><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
+              <Item className="feat"><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
+            </Stagger>
+            <Reveal><Everfit /></Reveal>
+          </div>
+          <Reveal delay={0.15}>
+            <div className="phone" aria-hidden="true">
+              <div className="ph-top"><i />MWB · Week 4 · Day 2</div>
+              <div className="ph-head">Lower body — strength</div>
+              <div className="ph-row done"><span>Goblet squat</span><span>3 × 8 · 24kg ✓</span></div>
+              <div className="ph-row done"><span>Romanian deadlift</span><span>3 × 10 · 40kg ✓</span></div>
+              <div className="ph-row"><span>Leg press</span><span>3 × 12 · 90kg</span></div>
+              <div className="ph-row"><span>Seated row</span><span>3 × 10 · 45kg</span></div>
+              <div className="ph-bar"><div className="ph-fill" /><span>Session 2 of 4 done</span></div>
+              <div className="ph-chat">
+                <div className="ph-msg coach"><b>Micah</b>Depth looks way better — add 2.5kg next session.</div>
+                <div className="ph-msg you">On it 💪</div>
+              </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

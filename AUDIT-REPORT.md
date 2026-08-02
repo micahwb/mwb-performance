@@ -114,3 +114,11 @@ Round 2 verification (`audit/gemini-verify-pass.md`): fixes confirmed. Final sco
 - **SEO:** per-page titles + meta descriptions on every route (usePageMeta), robots.txt.
 - **Logo round 4 (final):** simple athletic set per Gymshark/Alphalete formula research — Chevron Peak, Speed M, Plate Monogram, Bar M, Block Badge. Rounds 1–3 archived in subfolders.
 - Remaining for Micah beyond the website: PAR-Q intake questionnaire at onboarding (Everfit has forms), waiver acknowledgment in onboarding flow, cookie note only if analytics added.
+
+## v3.8 — Competitor benchmark: jordantrains.com (same day)
+Jordan Stirling-Rowling — **also a Christchurch PT, also Everfit-powered** — is Micah's most direct comparable. Full-page capture in `audit/research/jordantrains-full.png`.
+- **Their strengths:** volume of pro photography, Everfit app phone-mockup showcase, online + in-person dual offer, story section, confident voice.
+- **Their gaps (MWB already wins):** no pricing, no FAQ, no comparison table, no blog, template design (agency Next.js), generic orange-on-dark.
+- **Gap closed this round:** "Your whole program, in your pocket" section on Home — a pure-CSS brutalist phone mockup (stylised MWB program screen: exercise rows with logged sets, session progress bar, coach chat) + 4 app feature cells + Powered-by-Everfit badge. All solid colours, sharp corners, hard bronze shadow — intentionally NOT a generic device render (per Kimi K2 panel advice: "intentional restraint beats generic device renders").
+- Also: nav made fully solid (removed translucent backdrop-blur) per Henry's no-opacity-boxes rule.
+- **Still needs Micah:** a photo shoot. Their photography advantage is the only gap that can't be closed in code.
