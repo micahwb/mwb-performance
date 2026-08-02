@@ -122,3 +122,14 @@ Jordan Stirling-Rowling — **also a Christchurch PT, also Everfit-powered** —
 - **Gap closed this round:** "Your whole program, in your pocket" section on Home — a pure-CSS brutalist phone mockup (stylised MWB program screen: exercise rows with logged sets, session progress bar, coach chat) + 4 app feature cells + Powered-by-Everfit badge. All solid colours, sharp corners, hard bronze shadow — intentionally NOT a generic device render (per Kimi K2 panel advice: "intentional restraint beats generic device renders").
 - Also: nav made fully solid (removed translucent backdrop-blur) per Henry's no-opacity-boxes rule.
 - **Still needs Micah:** a photo shoot. Their photography advantage is the only gap that can't be closed in code.
+
+
+## v4.0 — World-class pass (2 Aug 2026, evening)
+**Research:** NZ PT-site landscape (Perplexity — market is weak on polish; MWB leads), premium motion patterns (disciplined scroll-linked reveals, no gimmicks). **Independent critique:** 3-model unbiased panel (DeepSeek V3, Qwen3-235B, GLM-4.5) → consensus asks implemented: sharper risk-reversal, low-commitment entry point, beginner-warm copy, Everfit woven into value prop.
+**Shipped:**
+- 4 editorial blog header illustrations + OG share image, generated with gpt-image-2 in brand palette (`public/images/blog/`), wired into blog cards, article pages and og:image.
+- "The MWB promise" risk-reversal band on Home (incl. first-week guarantee — wording marked [EDIT] for Micah to confirm).
+- Free-guide strip (low-commitment entry → gym-anxiety article).
+- About: editorial pull-quote band.
+- Motion: staggered word-reveal hero headline, clip-path wipe image reveals, blog reading-progress bar, image zoom-on-hover cards, price-card hover lifts, marquee pause-on-hover — all respecting prefers-reduced-motion.
+**Final Gemini vision pass** (`audit/gemini-final-pass.md`): contrast FIXED, typography rhythm FIXED; its two nits (guide CTA weight — fixed to solid; hairline dividers — intentional) closed or accepted.

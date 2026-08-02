@@ -53,6 +53,16 @@ export default function About() {
         </div>
       </section>
 
+      {/* PULL QUOTE — dark editorial moment */}
+      <section className="pull-quote">
+        <div className="wrap">
+          <Reveal>
+            <p className="pq">"Nobody is born confident in a gym.<br /><span className="accent">Confidence is a rep you practise</span> — and my job is to count them with you."</p>
+            <p className="pq-by">— Micah Barker, MWB Performance</p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* PHILOSOPHY — light */}
       <section className="light">
         <div className="wrap">

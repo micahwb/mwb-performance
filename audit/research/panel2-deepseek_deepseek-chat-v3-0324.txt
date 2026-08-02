@@ -1,0 +1,11 @@
+1. **Clear Unique Value Proposition (UVP)** – The site lacks a sharp, headline-level statement explaining why MWB is *the* best choice for beginners. The brutalist design demands bold, concise copy—currently too generic.  
+
+2. **Stronger Social Proof** – Placeholder testimonials undermine trust. Even without real ones, leverage case studies, before/after stats, or client transformation stories (text + rough sketches if no photos).  
+
+3. **Conversion-Focused CTA Hierarchy** – CTAs are present but lack urgency or strategic placement. Needs a primary CTA (e.g., "Start Your Assessment") repeated with contrasting color, plus secondary options (e.g., "Chat Now").  
+
+4. **Mobile UX Polish** – Brutalism risks usability. Check: touch targets (buttons too small?), sticky CTA blocking content, and legibility of Archivo Black in long paragraphs.  
+
+5. **Content Depth in Niche** – Beginner-focused? Prove it. Add a "New to Fitness?" guide, explainer videos on form, or a "Myths vs. Facts" section to establish authority.  
+
+*Bonus:* The Everfit badge feels like an afterthought—integrate it into the UVP ("Proven System" vs. just a tool).

@@ -491,3 +491,41 @@ footer.site a:hover { color: var(--bone); }
 .ph-msg.coach b { display: block; color: var(--ember); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 3px; }
 .ph-msg.you { background: var(--gold-fill); color: #F7F3E8; justify-self: end; font-weight: 700; }
 .app-section .everfit { margin-top: 26px; }
+
+/* ── World-class pass: motion + new sections ────────────────── */
+.hw { display: inline-block; }
+
+/* image wipe reveal */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal-wipe { clip-path: inset(0 100% 0 0); animation: wipe 0.9s cubic-bezier(0.22,1,0.36,1) 0.15s forwards; }
+  @keyframes wipe { to { clip-path: inset(0 0 0 0); } }
+}
+
+/* blog card art */
+.post-card { padding: 0; overflow: hidden; }
+.post-card .post-art { width: 100%; aspect-ratio: 3/2; object-fit: cover; border-bottom: 1px solid var(--line); transition: transform 400ms cubic-bezier(0.22,1,0.36,1); }
+.post-card:hover .post-art { transform: scale(1.04); }
+.post-card .meta, .post-card h3, .post-card p, .post-card .more { margin-left: 32px; margin-right: 32px; }
+.post-card .meta { margin-top: 26px; }
+.post-card .more { display: inline-block; margin-bottom: 30px; }
+.post-hero { width: 100%; aspect-ratio: 3/2; object-fit: cover; border: 1px solid var(--line); margin-bottom: 34px; }
+
+/* reading progress */
+.read-progress { position: fixed; top: 0; left: 0; height: 4px; background: var(--ember); z-index: 100; }
+
+/* marquee pause on hover */
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+/* pull quote band */
+.pull-quote { background: var(--ink-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.pq { font-size: clamp(1.4rem, 3.2vw, 2.3rem); font-weight: 800; line-height: 1.25; letter-spacing: -0.01em; max-width: 900px; color: var(--white); }
+.pq-by { margin-top: 22px; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--grey-on-dark); }
+
+/* guarantee + guide strip */
+.guide-strip { background: var(--ink); border-top: 1px solid var(--line); padding: 44px 0; }
+.guide-strip .label { margin-bottom: 8px; }
+
+/* price card hover lift */
+.price-card { transition: transform 200ms ease, box-shadow 200ms ease; }
+.price-card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--line-light); }
+.price-card.hot:hover { box-shadow: 12px 12px 0 var(--gold-fill); }

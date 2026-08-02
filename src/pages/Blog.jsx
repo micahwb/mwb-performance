@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { Reveal, CtaBanner, usePageMeta } from '../components.jsx'
 import { POSTS } from '../posts.js'
@@ -24,6 +25,7 @@ export function Blog() {
             {POSTS.map((p, i) => (
               <Reveal key={p.slug} delay={i * 0.06}>
                 <Link className="post-card" to={`/blog/${p.slug}`}>
+                  <img className="post-art" src={p.image} alt="" loading="lazy" />
                   <span className="meta">{fmt(p.date)} · {p.minutes} min read</span>
                   <h3>{p.title}</h3>
                   <p>{p.excerpt}</p>
@@ -39,6 +41,19 @@ export function Blog() {
   )
 }
 
+const ReadProgress = () => {
+  const [w, setW] = useState(0)
+  useEffect(() => {
+    const f = () => {
+      const h = document.documentElement
+      setW(Math.min(100, (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100))
+    }
+    window.addEventListener('scroll', f, { passive: true }); f()
+    return () => window.removeEventListener('scroll', f)
+  }, [])
+  return <div className="read-progress" style={{ width: `${w}%` }} />
+}
+
 export function Post() {
   const { slug } = useParams()
   const post = POSTS.find(p => p.slug === slug)
@@ -49,6 +64,7 @@ export function Post() {
   if (!post) return <NotFound />
   return (
     <>
+      <ReadProgress />
       <section className="page-head">
         <div className="wrap article">
           <Reveal><span className="label">The training log</span></Reveal>
@@ -58,6 +74,7 @@ export function Post() {
       </section>
       <section style={{ paddingTop: 24 }}>
         <div className="wrap article">
+          <Reveal><img className="post-hero reveal-wipe" src={post.image} alt="" /></Reveal>
           {post.body.map((b, i) =>
             b.h ? <h2 key={i} className="post-h">{b.h}</h2> : <p key={i} className="post-p">{b.p}</p>
           )}

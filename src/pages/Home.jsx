@@ -29,11 +29,14 @@ export default function Home() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
               <span className="hero-badge"><span className="dot" />Now accepting new clients</span>
             </motion.div>
-            <motion.h1
-              initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            >
-              Strength for people <span className="accent">starting out.</span>
+            <motion.h1 initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
+              {['Strength', 'for', 'people'].map(w => (
+                <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w} </motion.span>
+              ))}
+              <br />
+              {['starting', 'out.'].map(w => (
+                <motion.span key={w} className="hw accent" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w} </motion.span>
+              ))}
             </motion.h1>
             <motion.p className="lead"
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
@@ -218,6 +221,45 @@ export default function Home() {
               <Link className="btn ghost sm" to="/results">See all results →</Link>
             </p>
           </Reveal>
+        </div>
+      </section>
+
+      {/* RISK REVERSAL — light */}
+      <section className="light">
+        <div className="wrap guarantee">
+          <div>
+            <Reveal><span className="label">The MWB promise</span></Reveal>
+            <Reveal><h2>If you show up,<br />I make it work.</h2></Reveal>
+          </div>
+          <Stagger className="grid-3" >
+            <Item className="cell">
+              <div className="rule" />
+              <h3>Free intro call</h3>
+              <p>20 minutes, zero pressure — and an honest recommendation even if it's not me.</p>
+            </Item>
+            <Item className="cell">
+              <div className="rule" />
+              <h3>No lock-in, ever</h3>
+              <p>Week to week. Pause or cancel anytime. If coaching isn't delivering, you shouldn't be paying for it.</p>
+            </Item>
+            <Item className="cell">
+              <div className="rule" />
+              <h3>First week guarantee</h3>
+              {/* [EDIT] confirm this guarantee wording with Micah before launch */}
+              <p>If your first coached week isn't the clearest training you've ever done, it's free. Simple.</p>
+            </Item>
+          </Stagger>
+        </div>
+      </section>
+
+      {/* FREE GUIDE strip — dark */}
+      <section className="guide-strip">
+        <div className="wrap cta-inner">
+          <div>
+            <span className="label">Not ready to talk to a coach?</span>
+            <h3 style={{ fontSize: 'clamp(1.2rem,2.4vw,1.6rem)' }}>Start with the free guide: your first four weeks in the gym.</h3>
+          </div>
+          <Link className="btn" to="/blog/start-lifting-when-the-gym-scares-you">Read the free guide →</Link>
         </div>
       </section>
 

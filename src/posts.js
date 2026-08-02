@@ -2,6 +2,7 @@
 export const POSTS = [
   {
     slug: 'start-lifting-when-the-gym-scares-you',
+    image: './images/blog/gym-anxiety.jpg',
     title: 'How to start lifting weights when the gym scares you',
     date: '2026-07-28',
     minutes: 5,
@@ -22,6 +23,7 @@ export const POSTS = [
   },
   {
     slug: 'how-fast-do-beginners-build-muscle',
+    image: './images/blog/muscle-timeline.jpg',
     title: 'How fast do beginners actually build muscle? A realistic 12-week timeline',
     date: '2026-07-14',
     minutes: 6,
@@ -44,6 +46,7 @@ export const POSTS = [
   },
   {
     slug: 'three-day-beginner-split-that-sticks',
+    image: './images/blog/three-day-split.jpg',
     title: 'The 3-day beginner split that actually sticks',
     date: '2026-06-30',
     minutes: 5,
@@ -65,6 +68,7 @@ export const POSTS = [
   },
   {
     slug: 'fat-loss-vs-toning-truth',
+    image: './images/blog/fat-loss-toning.jpg',
     title: "Fat loss vs 'toning up': what's actually happening",
     date: '2026-06-16',
     minutes: 5,
