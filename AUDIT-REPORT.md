@@ -98,3 +98,10 @@ Round 2 verification (`audit/gemini-verify-pass.md`): fixes confirmed. Final sco
 ## v3.1 — Mint palette + logo round 2 (same day)
 - Accent switched from ember orange to the design system's **Foundry Mint `#B2FCE3`** per Henry; light sections now `#F5F5F5`, dark `#000`. Accent *text* on light sections uses ink (mint fails contrast on white); mint stays for CTAs, dark-section accents and decorative bars.
 - Logo round 2: Perplexity logo-strategy research (avoid dumbbell clichés; simple/ownable/16px; combo wordmark+mark) → 5 new concepts generated with **gpt-image-2** (flat output, no glow — unlike gpt-image-1): Ascent M, MB Ligature, Rising Bars W, Angular Koru, First-Step Door. In `brand/` + `~/Desktop/MICAH/micah logos/`.
+
+
+## v3.2 — Bronze brand lock + emblem logos + Everfit (same day)
+- Brand colour corrected to Henry's hex **#7B5D20** (antique bronze). Because #7B5D20 is dark (≈3:1 on black), the system uses it for fills/CTAs with off-white text, and a lighter gold tint `#C9A14B` for text accents on dark — standard brand-tint practice, both derive from the same hue.
+- Neutrals warmed to suit: off-white `#F2EEE4`, warm greys.
+- **Logo round 3 (final):** 5 complex emblem lockups containing "MWB PERFORMANCE", gpt-image-2: Athletic Crest, Circular Seal, Varsity Lockup (note: prints EST. 2020 — fix if chosen), Gothic Wordmark, Kārearea Falcon Emblem. In `brand/` and `~/Desktop/MICAH/micah logos/`.
+- **Everfit integration:** official Everfit SVG logos downloaded; "Powered by Everfit" badge on the Coaching page (with app explainer line) and in the footer.

@@ -142,6 +142,17 @@ export const Marquee = () => {
   )
 }
 
+/* ── Powered by Everfit badge ────────────────────────────────── */
+export const Everfit = ({ note }) => (
+  <div className="everfit">
+    <span className="pb">Powered by</span>
+    <a href="https://everfit.io" target="_blank" rel="noopener noreferrer" aria-label="Everfit coaching app">
+      <img src="./everfit-white.svg" alt="Everfit" height="22" loading="lazy" />
+    </a>
+    {note && <span className="note">{note}</span>}
+  </div>
+)
+
 /* ── CTA banner ──────────────────────────────────────────────── */
 export const CtaBanner = ({ title = 'Ready to get strong?', sub = 'Free 20-minute intro call. No pressure, no lock-in.' }) => (
   <section className="cta-banner">
@@ -191,6 +202,7 @@ export const Footer = () => (
       </div>
       <div className="foot-bottom">
         <span>© 2026 MWB Performance</span>
+        <Everfit />
         <span>Built for people who show up</span>
       </div>
     </div>

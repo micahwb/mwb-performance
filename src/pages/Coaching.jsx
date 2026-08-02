@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Reveal, Stagger, Item, CtaBanner } from '../components.jsx'
+import { Reveal, Stagger, Item, CtaBanner, Everfit } from '../components.jsx'
 
 export default function Coaching() {
   return (
@@ -41,6 +41,9 @@ export default function Coaching() {
               <p>Video feedback on your lifts so you build strength safely from day one.</p>
             </Item>
           </Stagger>
+          <Reveal>
+            <Everfit note="Your program lives in the Everfit coaching app — workouts, exercise videos and progress tracking, all in your pocket." />
+          </Reveal>
         </div>
       </section>
 
