@@ -74,7 +74,7 @@ h3 { font-weight: 800; font-size: clamp(1.05rem, 2vw, 1.3rem); letter-spacing: 0
   color: var(--ember);
   margin-bottom: 20px;
 }
-.label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 10px; vertical-align: -5px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
+.label::before { content: ''; display: inline-block; width: 32px; height: 32px; margin-right: 12px; vertical-align: -10px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
 .light .label::before { background-image: url('../icons/bullet-light.png'); }
 .sub { color: var(--grey-on-dark); max-width: 620px; font-size: 1.05rem; }
 .light .sub { color: var(--grey-on-light); }
