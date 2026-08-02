@@ -105,3 +105,12 @@ Round 2 verification (`audit/gemini-verify-pass.md`): fixes confirmed. Final sco
 - Neutrals warmed to suit: off-white `#F2EEE4`, warm greys.
 - **Logo round 3 (final):** 5 complex emblem lockups containing "MWB PERFORMANCE", gpt-image-2: Athletic Crest, Circular Seal, Varsity Lockup (note: prints EST. 2020 — fix if chosen), Gothic Wordmark, Kārearea Falcon Emblem. In `brand/` and `~/Desktop/MICAH/micah logos/`.
 - **Everfit integration:** official Everfit SVG logos downloaded; "Powered by Everfit" badge on the Coaching page (with app explainer line) and in the footer.
+
+
+## v3.3 — Content & compliance build-out (same day)
+- **Gap audit** (Perplexity, NZ law): a NZ PT site collecting personal + health-adjacent info needs a Privacy Act 2020-compliant privacy policy, coaching T&Cs with health/medical disclaimer and CGA-safe refund language, and ideally PAR-Q screening at onboarding. Raw research: `audit/research/perplexity-legal-gaps.json`.
+- **Added:** `/privacy` (Privacy Act 2020: what/why/who/retention/rights/OPC complaints, Everfit+form+Zoom+Meta processors, offshore storage note) and `/terms` (service scope, health disclaimer + GP clearance, no-results-guarantee, payments, pause/cancel/refunds aligned to CGA, IP, liability, NZ law). Both are marked as templates for a lawyer's once-over.
+- **Blog:** `/blog` + 4 articles in Micah's voice (gym anxiety playbook, realistic 12-week muscle timeline, 3-day beginner split, fat-loss vs toning) — each ends with a coaching CTA and a not-medical-advice line.
+- **SEO:** per-page titles + meta descriptions on every route (usePageMeta), robots.txt.
+- **Logo round 4 (final):** simple athletic set per Gymshark/Alphalete formula research — Chevron Peak, Speed M, Plate Monogram, Bar M, Block Badge. Rounds 1–3 archived in subfolders.
+- Remaining for Micah beyond the website: PAR-Q intake questionnaire at onboarding (Everfit has forms), waiver acknowledgment in onboarding flow, cookie note only if analytics added.

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
-import { Reveal, Stagger, Item, CtaBanner, Everfit } from '../components.jsx'
+import { Reveal, Stagger, Item, CtaBanner, Everfit, usePageMeta } from '../components.jsx'
 
 export default function Coaching() {
+    usePageMeta('Coaching & Pricing — MWB Performance', "What's included in MWB 1:1 online coaching: custom programs, weekly Zoom check-ins, DM support. Transparent pricing, no lock-in.")
   return (
     <>
       <section className="page-head">

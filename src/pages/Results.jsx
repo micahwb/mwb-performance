@@ -1,6 +1,7 @@
-import { Reveal, Stagger, Item, CtaBanner, CONFIG } from '../components.jsx'
+import { Reveal, Stagger, Item, CtaBanner, CONFIG, usePageMeta } from '../components.jsx'
 
 export default function Results() {
+    usePageMeta('Client Results — MWB Performance', 'Real client progress from MWB Performance 1:1 online coaching — plus a realistic 12-week timeline of what beginners can expect.')
   return (
     <>
       <section className="page-head">

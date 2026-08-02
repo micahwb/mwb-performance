@@ -55,9 +55,14 @@ Buy `mwbperformance.co.nz` (~NZ$20/yr) → **Settings → Pages → Custom domai
 - **Programs app:** the site carries an official "Powered by Everfit" badge (Coaching page + footer) — logos in `public/everfit*.svg`.
 - **Rule:** black + off-white + ONE bronze accent. Sharp corners everywhere — never add border-radius.
 
+## Legal pages & blog
+- `/privacy` and `/terms` are solid NZ-law templates (Privacy Act 2020 / Consumer Guarantees Act aware) — **have a lawyer glance over them once**, and fill the `[EDIT]` payment-provider line in Terms.
+- `/blog` has 4 articles written in your voice — edit freely in `src/posts.js`, and add new posts by copying the pattern.
+- Beyond the site: run a PAR-Q pre-exercise questionnaire in your Everfit onboarding (legal research says this is best practice for NZ PTs).
+
 ## What's in this folder
 ```
-src/                ← the website (5 pages + 404)
+src/                ← the website (9 pages: home, coaching, results, about, blog + 4 posts, contact, privacy, terms + 404)
 public/             ← logo, images
 v2-static/          ← simple single-file backup version
 .github/workflows/  ← auto-deploy to GitHub Pages

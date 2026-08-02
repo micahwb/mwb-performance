@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Reveal, Stagger, Item, Marquee, CtaBanner, Count } from '../components.jsx'
+import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta } from '../components.jsx'
 
 const Float = ({ className, delay, children }) => (
   <motion.div
@@ -19,6 +19,7 @@ const Float = ({ className, delay, children }) => (
 )
 
 export default function Home() {
+    usePageMeta('MWB Performance — Online Strength Coaching for Beginners | Christchurch NZ', '1:1 online strength coaching for beginners with Micah Barker. Custom programs, weekly Zoom check-ins, daily DM support. Christchurch, NZ.')
   return (
     <>
       {/* HERO */}

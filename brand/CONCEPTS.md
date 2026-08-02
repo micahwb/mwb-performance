@@ -1,15 +1,15 @@
 # MWB Performance — 5 logo concepts (pick one)
 
-**Round 3 — FINAL SET.** Complex emblem lockups with the company name, in the brand bronze `#7B5D20` + off-white + black. Generated with OpenAI **gpt-image-2** after logo-strategy research (Perplexity sweep of Gymshark/Rogue/Eleiko + memorability principles). Raw research: `MWB-PT-SITE/audit/research/perplexity-logo-research.json`.
+**Round 4 — FINAL SET: simple athletic gym logos** (Gymshark/Alphalete-formula research: wordmark-first, bold uppercase sans, compact mark for avatars). Bronze `#7B5D20` + off-white + black, generated with gpt-image-2.
 
-| # | File | Concept | The idea |
-|---|---|---|---|
-| 1 | `1-athletic-crest.png` | **Athletic Crest** | Heraldic shield — chevrons + rising sun over the Southern Alps, laurel wreath, "MWB PERFORMANCE / EST. 2026" ribbon. Most prestigious. ⭐ My pick. |
-| 2 | `2-circular-seal.png` | **Circular Seal** | Engraved coin/stamp — interlocked MWB monogram over crossed pillars, ring text "MWB PERFORMANCE · CHRISTCHURCH NZ". Perfect as an IG avatar + merch stamp. |
-| 3 | `3-varsity-lockup.png` | **Varsity Lockup** | College-athletics stacked M/W/B with "PERFORMANCE" banner. Big apparel energy. ⚠ Says "EST. 2020" — regenerate or retouch to 2026 if picked. |
-| 4 | `4-gothic-wordmark.png` | **Gothic Wordmark** | Sharp blackletter-athletic "MWB" with engraved "PERFORMANCE" — premium streetwear-label feel. |
-| 5 | `5-eagle-emblem.png` | **Kārearea Emblem** | NZ falcon, wings spread, perched on a bar, over "MWB PERFORMANCE · STRENGTH COACHING" with a silver-fern flourish. Most distinctly New Zealand + most detailed. |
+| # | File | Concept |
+|---|---|---|
+| 1 | `1-chevron-W-wordmark.png` | **Chevron Peak** — MWB with the W's apex rising into a bronze chevron, PERFORMANCE tracked out below. Type-led, chest-print ready. ⭐ Best overall fit with the site. |
+| 2 | `2-speed-M-badge.png` | **Speed M** — slanted M with speed cuts in a bronze square + stacked name. Most "motion/energy". |
+| 3 | `3-plate-monogram.png` | **Plate Monogram** — weight-plate circle with M knockout + horizontal name lockup. Most classic gym. |
+| 4 | `4-bar-M-stack.png` | **Bar M** — M with barbell-upright stems, name beneath. Subtlest. |
+| 5 | `5-block-badge.png` | **Block Badge** — solid bronze square, massive stacked MWB., PERFORMANCE along the base. Most brutalist — literally matches the website's design language. |
 
-Earlier rounds kept for comparison: `round-1-gpt-image-1/` (first icons), `round-2-mint-icons/` (minimal mint marks).
+Earlier rounds for comparison: `round-1-gpt-image-1/`, `round-2-mint-icons/`, `round-3-emblems/` (complex crest/seal/falcon versions with full name — still great for Instagram posts and merch prints).
 
-**Once Micah picks one:** use the PNG directly for Instagram/merch; for the website nav + favicon, have a simplified version traced (complex emblems blur at 16px — standard practice is emblem for print/social, simplified mark for favicon). The site currently runs a placeholder bronze barbell mark at `public/mark.svg`.
+**When Micah picks:** use the PNG for social/merch; have the winner traced to SVG for the site nav + favicon (`public/mark.svg` is the current placeholder).

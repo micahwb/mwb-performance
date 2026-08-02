@@ -12,6 +12,16 @@ export const CONFIG = {
   LINKEDIN: 'https://www.linkedin.com/in/micah-barker-4b527b338/',
 }
 
+/* ── Per-page meta (SEO) ─────────────────────────────────────── */
+export const usePageMeta = (title, description) => {
+  useEffect(() => {
+    document.title = title
+    let m = document.querySelector('meta[name="description"]')
+    if (!m) { m = document.createElement('meta'); m.name = 'description'; document.head.appendChild(m) }
+    if (description) m.content = description
+  }, [title, description])
+}
+
 /* ── Motion helpers ──────────────────────────────────────────── */
 export const Reveal = ({ children, delay = 0, y = 26, ...rest }) => (
   <motion.div
@@ -74,6 +84,7 @@ const LINKS = [
   { to: '/coaching', label: 'Coaching' },
   { to: '/results', label: 'Results' },
   { to: '/about', label: 'About' },
+  { to: '/blog', label: 'Blog' },
   { to: '/contact', label: 'Contact' },
 ]
 
@@ -187,7 +198,10 @@ export const Footer = () => (
             <li><Link to="/coaching">Coaching &amp; pricing</Link></li>
             <li><Link to="/results">Results</Link></li>
             <li><Link to="/about">About Micah</Link></li>
+            <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/privacy">Privacy policy</Link></li>
+            <li><Link to="/terms">Terms &amp; conditions</Link></li>
           </ul>
         </div>
         <div>
