@@ -230,6 +230,7 @@ export const Footer = () => (
           </ul>
         </div>
       </div>
+      <div className="foot-mark" aria-hidden="true">MWB PERFORMANCE</div>
       <div className="foot-bottom">
         <span>© 2026 MWB Performance</span>
         <Everfit />

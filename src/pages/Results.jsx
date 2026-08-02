@@ -52,6 +52,20 @@ export default function Results() {
         </div>
       </section>
 
+      {/* HOW PROGRESS IS MEASURED — dark */}
+      <section style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <Reveal><span className="label">How progress gets measured</span></Reveal>
+          <Reveal><h2>No vibes. Numbers.</h2></Reveal>
+          <Stagger className="grid-4">
+            <Item className="cell"><span className="idx">01</span><h3>Every set logged</h3><p>Weights and reps in the app, every session — the strength curve doesn't lie.</p></Item>
+            <Item className="cell"><span className="idx">02</span><h3>Measurements</h3><p>Waist, hips, arms — monthly. The scale is the least useful number we track.</p></Item>
+            <Item className="cell"><span className="idx">03</span><h3>Progress photos</h3><p>Same light, same pose, every four weeks. Private, and only if you want them.</p></Item>
+            <Item className="cell"><span className="idx">04</span><h3>PB board</h3><p>Every personal best recorded and celebrated. Beginners set a lot of them.</p></Item>
+          </Stagger>
+        </div>
+      </section>
+
       {/* WHAT TO EXPECT — light */}
       <section className="light">
         <div className="wrap">

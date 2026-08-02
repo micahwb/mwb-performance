@@ -101,7 +101,25 @@ export default function Coaching() {
           </div>
           <Reveal><p className="sub" style={{ marginTop: 26, fontSize: '0.85rem' }}>
             First intro call is always free. Honest recommendation — even if it's not me.
+            All plans covered by the first-week guarantee — if week one isn't the clearest training you've done, it's free.
           </p></Reveal>
+        </div>
+      </section>
+
+      {/* WEEK INSIDE — dark */}
+      <section>
+        <div className="wrap">
+          <Reveal><span className="label">A week inside coaching</span></Reveal>
+          <Reveal><h2>What working together<br />actually looks like.</h2></Reveal>
+          <Stagger className="week-grid">
+            <Item className="wday"><b>Mon</b><i>Session 1</i><p>Lower body. Log every set in the app — I see it live.</p></Item>
+            <Item className="wday"><b>Tue</b><i>Rest</i><p>Recovery day. Steps + protein target, nothing else.</p></Item>
+            <Item className="wday"><b>Wed</b><i>Session 2</i><p>Upper body. Filmed a set? Send it — form check same day.</p></Item>
+            <Item className="wday"><b>Thu</b><i>DM check</i><p>Quick pulse: energy, sleep, any niggles before session 3.</p></Item>
+            <Item className="wday"><b>Fri</b><i>Session 3</i><p>Full body. Push for the small PBs the plan lined up.</p></Item>
+            <Item className="wday"><b>Sat</b><i>Free</i><p>Life. The plan bends around it, not the other way.</p></Item>
+            <Item className="wday hot"><b>Sun</b><i>Zoom check-in</i><p>20 minutes together: review the week, adjust the block, set next week's targets.</p></Item>
+          </Stagger>
         </div>
       </section>
 

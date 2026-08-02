@@ -107,6 +107,18 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      {/* AFTER YOU SUBMIT — light */}
+      <section className="light">
+        <div className="wrap">
+          <Reveal><span className="label">What happens next</span></Reveal>
+          <Reveal><h2>From message to first session<br />in under a week.</h2></Reveal>
+          <Stagger className="grid-3">
+            <Item className="cell"><span className="idx">24h</span><h3>I reply</h3><p>Personally, within 24 hours — usually faster. We lock in a call time that suits you.</p></Item>
+            <Item className="cell"><span className="idx">Day 2–3</span><h3>Intro call</h3><p>20 relaxed minutes on Zoom or phone. Goals, history, honest recommendation.</p></Item>
+            <Item className="cell"><span className="idx">Day 5–7</span><h3>Program lands</h3><p>If we're a fit, your custom block arrives in the Everfit app and week one begins.</p></Item>
+          </Stagger>
+        </div>
+      </section>
     </>
   )
 }

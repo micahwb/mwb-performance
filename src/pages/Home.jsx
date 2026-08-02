@@ -97,7 +97,7 @@ export default function Home() {
       {/* WHO IT'S FOR — light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">Who this is for</span></Reveal>
+          <Reveal><span className="label">01 — Who this is for</span></Reveal>
           <Reveal><h2>Built for people starting out —<br />not for gym veterans.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
@@ -122,7 +122,7 @@ export default function Home() {
       {/* HOW IT WORKS — dark */}
       <section>
         <div className="wrap">
-          <Reveal><span className="label">How it works</span></Reveal>
+          <Reveal><span className="label">02 — How it works</span></Reveal>
           <Reveal><h2>Three steps between you<br />and your first program.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
@@ -148,7 +148,7 @@ export default function Home() {
       <section className="app-section">
         <div className="wrap app-grid">
           <div>
-            <Reveal><span className="label">Your coaching app</span></Reveal>
+            <Reveal><span className="label">03 — Your coaching app</span></Reveal>
             <Reveal><h2>Your whole program,<br />in your pocket.</h2></Reveal>
             <Reveal><p className="sub" style={{ margin: '18px 0 34px' }}>
               Every session, exercise video, logged set and coach conversation lives in the
@@ -183,7 +183,7 @@ export default function Home() {
       {/* STATS — light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">The standard</span></Reveal>
+          <Reveal><span className="label">04 — The standard</span></Reveal>
           <Reveal><h2>Coaching, measured.</h2></Reveal>
           <div className="stats">
             <Reveal className="stat"><div className="n"><Count to={1} />:<em>1</em></div><div className="t">Coaching only — never group templates</div></Reveal>
@@ -197,7 +197,7 @@ export default function Home() {
       {/* PROOF teaser — dark */}
       <section>
         <div className="wrap">
-          <Reveal><span className="label">Client results</span></Reveal>
+          <Reveal><span className="label">05 — Client results</span></Reveal>
           <Reveal><h2>Real people. Real progress.</h2></Reveal>
           <div className="quotes">
             {/* [EDIT-QUOTES] replace with real client quotes before launch */}
@@ -228,7 +228,7 @@ export default function Home() {
       <section className="light">
         <div className="wrap guarantee">
           <div>
-            <Reveal><span className="label">The MWB promise</span></Reveal>
+            <Reveal><span className="label">06 — The MWB promise</span></Reveal>
             <Reveal><h2>If you show up,<br />I make it work.</h2></Reveal>
           </div>
           <Stagger className="grid-3" >

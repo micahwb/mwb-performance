@@ -529,3 +529,30 @@ footer.site a:hover { color: var(--bone); }
 .price-card { transition: transform 200ms ease, box-shadow 200ms ease; }
 .price-card:hover { transform: translate(-3px, -3px); box-shadow: 8px 8px 0 var(--line-light); }
 .price-card.hot:hover { box-shadow: 12px 12px 0 var(--gold-fill); }
+
+/* ── Everything in its place: week grid, journey, foot mark ── */
+.week-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 48px; }
+@media (max-width: 1000px) { .week-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .week-grid { grid-template-columns: 1fr; } }
+.wday { background: var(--ink); padding: 22px 18px; }
+.wday b { display: block; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; color: var(--grey-on-dark); }
+.wday i { display: block; font-style: normal; font-weight: 800; color: var(--ember); margin: 8px 0 10px; font-size: 0.95rem; }
+.wday p { color: var(--grey-on-dark); font-size: 0.8rem; line-height: 1.55; }
+.wday.hot { background: var(--card); border-top: 3px solid var(--gold-fill); }
+.wday.hot i { color: var(--white); }
+
+.journey { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 40px; counter-reset: j; }
+@media (max-width: 900px) { .journey { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .journey { grid-template-columns: 1fr; } }
+.jstep { background: var(--ink); padding: 30px 26px; position: relative; }
+.jstep::before { counter-increment: j; content: counter(j, decimal-leading-zero); font-weight: 900; font-size: 1.6rem; color: var(--ember); display: block; margin-bottom: 12px; }
+.jstep b { display: block; font-size: 1rem; margin-bottom: 8px; color: var(--white); }
+.jstep p { color: var(--grey-on-dark); font-size: 0.86rem; }
+.jstep.hot { background: var(--card); border-top: 3px solid var(--gold-fill); }
+
+.foot-mark {
+  font-weight: 900; font-stretch: 115%; text-transform: uppercase; letter-spacing: 0.02em;
+  font-size: clamp(2.4rem, 8.5vw, 7.4rem); line-height: 1; text-align: center;
+  color: transparent; -webkit-text-stroke: 1px var(--line); margin: 20px 0 40px;
+  user-select: none; white-space: nowrap; overflow: hidden;
+}

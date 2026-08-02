@@ -53,6 +53,19 @@ export default function About() {
         </div>
       </section>
 
+      {/* JOURNEY — dark */}
+      <section style={{ paddingTop: 0 }}>
+        <div className="wrap">
+          <Reveal><span className="label">The path here</span></Reveal>
+          <Stagger className="journey">
+            <Item className="jstep"><b>The first rep</b><p>Started as the beginner I now coach — unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
+            <Item className="jstep"><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) — the foundation done properly: anatomy, programming, safe progression.</p></Item>
+            <Item className="jstep"><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach — because "qualified" is a starting line, not a finish line.</p></Item>
+            <Item className="jstep hot"><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners — the coach I needed on day one.</p></Item>
+          </Stagger>
+        </div>
+      </section>
+
       {/* PULL QUOTE — dark editorial moment */}
       <section className="pull-quote">
         <div className="wrap">
