@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Reveal, CONFIG, usePageMeta } from '../components.jsx'
+import { Reveal, CONFIG, usePageMeta, Stagger, Item } from '../components.jsx'
 
 export default function Contact() {
   usePageMeta('Book Your Free Intro Call — MWB Performance', "Book a free, no-pressure 20-minute intro call with coach Micah Barker. Tell me your goals and I'll reply within 24 hours.")

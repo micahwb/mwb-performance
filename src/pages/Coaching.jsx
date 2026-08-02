@@ -134,11 +134,11 @@ export default function Coaching() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>Program built for you</td><td className="me yes">✓ Every block</td><td>Sometimes</td><td>✗ Template</td></tr>
-                  <tr><td>Weekly 1:1 check-in</td><td className="me yes">✓ Zoom, every week</td><td>✓ In session</td><td>✗</td></tr>
-                  <tr><td>Coach in your DMs</td><td className="me yes">✓ 7 days</td><td>✗</td><td>✗</td></tr>
-                  <tr><td>Form-check videos</td><td className="me yes">✓ Included</td><td>In session only</td><td>✗</td></tr>
-                  <tr><td>Train on your schedule</td><td className="me yes">✓ Any gym, any time</td><td>✗ Booked slots</td><td>✓</td></tr>
+                  <tr><td>Program built for you</td><td className="me yes">Every block</td><td>Sometimes</td><td>✗ Template</td></tr>
+                  <tr><td>Weekly 1:1 check-in</td><td className="me yes">Zoom, every week</td><td>✓ In session</td><td>✗</td></tr>
+                  <tr><td>Coach in your DMs</td><td className="me yes">7 days</td><td>✗</td><td>✗</td></tr>
+                  <tr><td>Form-check videos</td><td className="me yes">Included</td><td>In session only</td><td>✗</td></tr>
+                  <tr><td>Train on your schedule</td><td className="me yes">Any gym, any time</td><td>✗ Booked slots</td><td>✓</td></tr>
                   <tr><td>Pricing</td><td className="me">Tailored — discussed on your call</td><td>$80–120/session</td><td>$15–30/mo</td></tr>
                   <tr><td>Lock-in contract</td><td className="me yes">None</td><td>Often 10+ sessions</td><td>Annual plans</td></tr>
                 </tbody>

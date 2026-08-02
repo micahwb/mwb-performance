@@ -451,12 +451,12 @@ footer.site a:hover { color: var(--bone); }
   grid-auto-rows: min-content;
   gap: 20px;
   align-items: start;
-  max-width: 980px; margin: 0 auto; width: 100%;
+  max-width: 1120px; margin: 0 auto; width: 100%;
   text-align: left;
 }
 .collage .fcard { position: static; width: auto; }
 .fcard.c-main { grid-row: 1 / span 2; box-shadow: 10px 10px 0 var(--gold-fill); transform: rotate(-1deg); }
-.fcard.c-main img { width: 100%; aspect-ratio: 16/10; object-fit: cover; object-position: center 10%; margin-bottom: 16px; filter: grayscale(15%) contrast(1.05) brightness(1.28); }
+.fcard.c-main img { width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: center 10%; margin-bottom: 16px; filter: grayscale(15%) contrast(1.05) brightness(1.28); }
 .fcard.c-widget { transform: rotate(0.8deg); box-shadow: 7px 7px 0 var(--gold-fill); }
 .fcard.c-dm { transform: rotate(-0.6deg) translateY(10px); box-shadow: 7px 7px 0 rgba(123, 93, 32, 0.55); }
 .toast.c-toast { position: static; grid-column: 1 / -1; width: 92%; transform: rotate(0.5deg); margin-top: 2px; }
@@ -601,3 +601,11 @@ footer.site a:hover { color: var(--bone); }
 /* custom generated iconography */
 .cell-ico { width: 44px; height: 44px; object-fit: contain; margin-bottom: 16px; border-radius: 4px; }
 .price-card ul li::before { content: none; }
+
+/* icons deployed site-wide */
+.feat b { display: flex; align-items: center; gap: 8px; }
+.feat b::before { content: ''; width: 13px; height: 13px; background: url('./icons/bullet-dark.png') center/contain no-repeat; flex: 0 0 13px; }
+footer.site h4::before { content: ''; display: inline-block; width: 11px; height: 11px; margin-right: 8px; background: url('./icons/bullet-dark.png') center/contain no-repeat; }
+.wday i::before { content: ''; display: inline-block; width: 11px; height: 11px; margin-right: 7px; background: url('./icons/bullet-dark.png') center/contain no-repeat; }
+.compare .yes { background-image: url('./icons/tick-dark.png'); background-repeat: no-repeat; background-position: left center; background-size: 13px; padding-left: 20px; }
+.hero-badge .dot { background: url('./icons/bullet-dark.png') center/contain no-repeat; width: 12px; height: 12px; animation: none; }
