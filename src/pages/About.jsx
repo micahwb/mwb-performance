@@ -16,7 +16,7 @@ export default function About() {
           <Reveal>
             {/* [EDIT] replace with a friendly, well-lit photo of Micah */}
             <div className="duotone">
-              <img src="./images/gym_2.jpg" alt="Micah Barker coaching a client through a session" />
+              <img src="./images/gym_1.jpg" alt="Micah Barker, MWB Performance coach" />
               <span className="tag">Micah Barker · Coach</span>
             </div>
           </Reveal>

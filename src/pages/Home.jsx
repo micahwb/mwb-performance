@@ -61,7 +61,7 @@ export default function Home() {
 
           <div className="stack" aria-hidden="true">
             <Float className="main" delay={0.2}>
-              <img src="./images/gym_1.jpg" alt="" />
+              <img src="./images/gym_2.jpg" alt="Micah Barker, MWB Performance coach" />
               <div className="fk">This week</div>
               <div className="fv">Weekly check-in · Zoom</div>
               <div className="fs">Custom program · Week 4 of 12</div>
