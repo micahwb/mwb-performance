@@ -71,14 +71,17 @@ export default function Home() {
               <div className="bar-track"><div className="bar-fill" /></div>
             </Float>
             <Float className="c-widget" delay={0.4}>
-              <div className="fk">Focus</div>
-              <div className="fv">Hypertrophy + Strength</div>
-              <div className="fs">Beginner block · 3 days/wk</div>
+              <div className="fk">Block 1 · lifts moving</div>
+              <div className="mini"><span>Goblet squat</span><em>16 → 24kg</em><div className="mini-bar"><i style={{ width: '75%' }} /></div></div>
+              <div className="mini"><span>Bench press</span><em>30 → 42.5kg</em><div className="mini-bar"><i style={{ width: '62%' }} /></div></div>
+              <div className="mini"><span>Deadlift</span><em>60 → 85kg</em><div className="mini-bar"><i style={{ width: '84%' }} /></div></div>
+              <div className="fs" style={{ marginTop: 12 }}>Hypertrophy + strength · 3 days/wk</div>
             </Float>
             <Float className="c-dm" delay={0.6}>
-              <div className="fk">DM support</div>
-              <div className="fv">Form check reviewed ✓</div>
-              <div className="fs">"Depth looks way better — add 2.5kg next session."</div>
+              <div className="fk">DM support · today</div>
+              <div className="chat-line coach"><b>Micah</b>Depth looks way better — add 2.5kg next session.</div>
+              <div className="chat-line you">On it 💪</div>
+              <div className="chat-line coach"><b>Micah</b>That's a PB by the way. Logged it.</div>
             </Float>
             <motion.div
               className="toast c-toast"
