@@ -68,3 +68,29 @@ Section order follows the researched high-conversion pattern (hero → who it's 
 ---
 
 *Reference material in this repo: `old-bolt-site/` (extracted original), `audit/old-site-captures/` (screenshots + rendered content), `audit/research/` (raw Perplexity/Exa/model-panel JSON), `audit/new-*.png` (rebuild screenshots).*
+
+---
+
+# v3 REBUILD — multi-page React site (2 Aug 2026, same day)
+
+Rebuilt again per Henry's spec: LeadFoundry design-system DNA, **no Tailwind** (hand-written CSS tokens), **zero rounded corners**, React + Vite + **Framer Motion**, five pages + 404, unique palette and AI-generated logo.
+
+## Brand decisions
+- **Palette (chosen for MWB):** Ink `#0B0A08` + Bone `#ECE7DC` + Ember `#FF4D24`. Follows the design system's "black + ONE accent" rule with a brand-unique accent (LeadFoundry keeps mint).
+- **Type:** Archivo (variable) — 900 uppercase expanded headlines, sentence-case body. Single family per system rules.
+- **Signature moves:** hard offset shadows (no blur), 1px hairline grids, ember top-bar on nav, duotone-striped photo treatment, marquee strip, floating product cards in hero.
+- **Logo:** gpt-image-1 generated 3 candidates (in `audit/logo-candidates/` — keep for Instagram brand art); production mark is a hand-built sharp SVG barbell (`public/mark.svg`) so the favicon is crisp at 16px.
+
+## Research inputs
+- Perplexity design-trends sweep (`audit/research/perplexity-design-trends.json`): premium = monochrome base + one aggressive accent, oversized kerned type, editorial discipline, one-message hero — all adopted.
+- Firecrawl scrapes of exemplar coaching sites (janeflores.com, lordsonstrong.com, bespoke.fit) in `audit/research/`.
+
+## Gemini live visual audit (screenshots → Gemini vision)
+Round 1 (`audit/gemini-visual-audit.md`) flagged: low-contrast grey text, uppercase monotony, weak hero-card borders, mobile hero too tall, contact form buried on mobile, pricing order. **All fixed.**
+Round 2 verification (`audit/gemini-verify-pass.md`): fixes confirmed. Final scores — **Aesthetic 8.8/10, Conversion 8.5/10.** Its remaining top suggestion (real coach portrait in hero) is blocked on new photos of Micah — noted in README.
+
+## Verified
+- No horizontal scroll on any page at 390px; zero console errors across all routes.
+- Mobile sticky "Book free call" bar after first scroll; form-first contact layout on mobile.
+- Form: Formspree endpoint config + mailto fallback + IG DM escape hatch (leads always reach Micah).
+- Auto-deploy GitHub Action included; HashRouter so the site works on any static host with zero config.
