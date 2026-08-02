@@ -204,8 +204,8 @@ export const Footer = () => (
             <img className="lockup" src="./logo-lockup.png" alt="MWB Performance" />
           </Link>
           <p style={{ marginTop: 18, maxWidth: 380 }}>
-            1:1 online strength coaching that meets you where you are. Custom programs,
-            weekly Zoom check-ins and real accountability — train from anywhere.
+            1:1 strength coaching that meets you where you are — in person in Christchurch
+            or online NZ-wide. Custom programs, weekly check-ins, real accountability.
           </p>
         </div>
         <div>

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { Reveal, Stagger, Item, CtaBanner, Everfit, usePageMeta } from '../components.jsx'
 
 export default function Coaching() {
-    usePageMeta('Coaching & Pricing — MWB Performance', "What's included in MWB 1:1 online coaching: custom programs, weekly Zoom check-ins, DM support. Transparent pricing, no lock-in.")
+    usePageMeta('Coaching — MWB Performance', '1:1 coaching with Micah Barker: in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, DM support. No lock-in.')
   return (
     <>
       <section className="page-head">
@@ -10,8 +10,9 @@ export default function Coaching() {
           <Reveal><span className="label">Coaching &amp; pricing</span></Reveal>
           <Reveal><h1>Everything you need to progress. <span className="accent">Nothing you don't.</span></h1></Reveal>
           <Reveal><p className="sub page-sub" style={{ marginTop: 20 }}>
-            Fully online 1:1 coaching, built around your gym, your pace and your life —
-            specialising in resistance training for hypertrophy, strength and fat loss.
+            1:1 coaching built around your pace and your life — train with me in person
+            in Christchurch, or fully online from any gym in New Zealand. Specialising in
+            resistance training for hypertrophy, strength and fat loss.
           </p></Reveal>
         </div>
       </section>
@@ -48,17 +49,29 @@ export default function Coaching() {
         </div>
       </section>
 
-      {/* THE OFFER — light */}
+      {/* TWO WAYS — light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">The offer</span></Reveal>
-          <Reveal><h2>One service. Done properly.</h2></Reveal>
+          <Reveal><span className="label">Two ways to train</span></Reveal>
+          <Reveal><h2>In the gym with me,<br />or coached from anywhere.</h2></Reveal>
+          <Stagger className="grid-3" style={{ gridTemplateColumns: '1fr 1fr' }}>
+            <Item className="cell">
+              <div className="rule" />
+              <h3>In-person · Christchurch</h3>
+              <p>Train 1:1 with me in the gym — hands-on technique coaching, immediate feedback, sessions built around your goals. Ideal if you want someone right there for every rep.</p>
+            </Item>
+            <Item className="cell">
+              <div className="rule" />
+              <h3>Online · NZ-wide</h3>
+              <p>Your custom program in the Everfit app, weekly Zoom check-ins and DM support every day. The same coaching brain, at your own gym, on your schedule.</p>
+            </Item>
+          </Stagger>
           <Reveal>
             <div className="offer-card">
               <div className="offer-head">
                 <div>
-                  <div className="tier">1:1 Online Coaching</div>
-                  <p className="offer-sub">Fully personalised, month to month, no lock-in. Investment discussed on your free intro call — so the plan fits your goals before we ever talk numbers.</p>
+                  <div className="tier">1:1 Coaching — In-Person or Online</div>
+                  <p className="offer-sub">In person in Christchurch or online NZ-wide — fully personalised, month to month, no lock-in. Investment discussed on your free intro call, so the plan fits your goals before we ever talk numbers.</p>
                 </div>
                 <Link className="btn" to="/contact">Book your free intro call</Link>
               </div>
@@ -151,8 +164,8 @@ export default function Coaching() {
                 <div className="a">Yes — beginners are exactly who I coach. Every exercise comes with technique guidance, and you can send me form-check videos any time.</div>
               </details>
               <details>
-                <summary>How does online coaching actually work?</summary>
-                <div className="a">You get a custom program in your pocket, a weekly Zoom check-in to review progress and adjust the plan, and DM support between sessions. The accountability of a PT, on your schedule.</div>
+                <summary>Should I pick in-person or online?</summary>
+                <div className="a">In-person (Christchurch) suits you if you want hands-on technique coaching every session. Online suits you if you want flexibility at your own gym with the same programming, weekly check-ins and daily DM support. Plenty of clients start in person and move online once their confidence is built — we\u2019ll figure out the right fit on your call.</div>
               </details>
               <details>
                 <summary>How fast will I see results?</summary>

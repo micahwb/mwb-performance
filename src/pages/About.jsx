@@ -37,15 +37,16 @@ export default function About() {
             </Reveal>
             <Reveal delay={0.16}>
               <p className="sub">
-                All coaching is delivered 1:1 online, so you train at your own gym, on your
-                schedule, with the accountability and guidance you need to actually progress.
+                Coaching is 1:1, your way — in person with me in Christchurch, or online at
+                your own gym anywhere in NZ, with the accountability and guidance you need
+                to actually progress.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="creds">
                 <div className="cred"><b>Level 4</b><span>NZ Cert. Health &amp; Fitness — Personal Trainer</span></div>
                 <div className="cred"><b>Level 5</b><span>Advanced H&amp;F Coach — in progress</span></div>
-                <div className="cred"><b>1:1 only</b><span>Fully online, NZ-wide</span></div>
+                <div className="cred"><b>1:1 only</b><span>In-person CHCH + online NZ-wide</span></div>
                 <div className="cred"><b>CHCH</b><span>Based in Christchurch, NZ</span></div>
               </div>
             </Reveal>

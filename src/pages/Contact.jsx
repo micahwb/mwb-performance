@@ -56,6 +56,15 @@ export default function Contact() {
               </div>
               <div className="frow">
                 <label>Phone (optional)<input type="tel" name="phone" autoComplete="tel" /></label>
+                <label>Preferred coaching
+                  <select name="mode" defaultValue="Not sure yet">
+                    <option>In-person (Christchurch)</option>
+                    <option>Online coaching</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </label>
+              </div>
+              <div className="frow">
                 <label>Main goal
                   <select name="goal" defaultValue="Build muscle">
                     <option>Build muscle</option>

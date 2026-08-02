@@ -19,7 +19,7 @@ const Float = ({ className, delay, children }) => (
 )
 
 export default function Home() {
-  usePageMeta('MWB Performance — Online Strength Coaching for Beginners | Christchurch NZ', '1:1 online strength coaching for beginners with Micah Barker. Custom programs, weekly Zoom check-ins, daily DM support. Christchurch, NZ.')
+  usePageMeta('MWB Performance — Online & In-Person Strength Coaching | Christchurch NZ', '1:1 strength coaching for beginners with Micah Barker — in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, daily DM support.')
   return (
     <>
       {/* HERO */}
@@ -42,9 +42,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
             >
-              1:1 online coaching for beginners — custom resistance-training programs,
-              a weekly Zoom check-in and a coach in your DMs. Build muscle, gain strength,
-              lose fat. No guesswork, no gym intimidation.
+              1:1 coaching for beginners — in person in Christchurch or online anywhere in NZ.
+              Custom programs, weekly check-ins and a coach in your DMs. Build muscle,
+              gain strength, lose fat. No guesswork, no gym intimidation.
             </motion.p>
             <motion.div className="hero-ctas"
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
@@ -57,8 +57,8 @@ export default function Home() {
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
             >
               <span><b>NZ-qualified</b> L4 PT</span>
-              <span><b>1:1 only</b> — no templates</span>
-              <span><b>CHCH</b> based · NZ-wide</span>
+              <span><b>In-person</b> · Christchurch</span>
+              <span><b>Online</b> · NZ-wide</span>
             </motion.div>
           </div>
 
