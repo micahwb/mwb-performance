@@ -10,7 +10,7 @@ const Float = ({ className, delay, children }) => (
     transition={{ duration: 0.7, delay, ease: [0.22, 1, 0.36, 1] }}
   >
     <motion.div
-      animate={{ y: [0, -8, 0] }}
+      animate={{ y: [0, -5, 0] }}
       transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay }}
     >
       {children}
@@ -19,7 +19,7 @@ const Float = ({ className, delay, children }) => (
 )
 
 export default function Home() {
-    usePageMeta('MWB Performance — Online Strength Coaching for Beginners | Christchurch NZ', '1:1 online strength coaching for beginners with Micah Barker. Custom programs, weekly Zoom check-ins, daily DM support. Christchurch, NZ.')
+  usePageMeta('MWB Performance — Online Strength Coaching for Beginners | Christchurch NZ', '1:1 online strength coaching for beginners with Micah Barker. Custom programs, weekly Zoom check-ins, daily DM support. Christchurch, NZ.')
   return (
     <>
       {/* HERO */}
@@ -59,26 +59,26 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="stack" aria-hidden="true">
-            <Float className="main" delay={0.2}>
-              <img src="./images/gym_2.jpg" alt="Micah Barker, MWB Performance coach" />
+          <div className="collage" aria-hidden="true">
+            <Float className="c-main" delay={0.2}>
+              <img src="./images/gym_2.jpg" alt="" />
               <div className="fk">This week</div>
               <div className="fv">Weekly check-in · Zoom</div>
               <div className="fs">Custom program · Week 4 of 12</div>
               <div className="bar-track"><div className="bar-fill" /></div>
             </Float>
-            <Float className="widget" delay={0.4}>
+            <Float className="c-widget" delay={0.4}>
               <div className="fk">Focus</div>
               <div className="fv">Hypertrophy + Strength</div>
               <div className="fs">Beginner block · 3 days/wk</div>
             </Float>
-            <Float className="counter" delay={0.6}>
+            <Float className="c-dm" delay={0.6}>
               <div className="fk">DM support</div>
               <div className="fv">Form check reviewed ✓</div>
               <div className="fs">"Depth looks way better — add 2.5kg next session."</div>
             </Float>
             <motion.div
-              className="toast"
+              className="toast c-toast"
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 2.2, duration: 0.5, ease: 'easeOut' }}

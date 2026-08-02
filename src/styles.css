@@ -442,3 +442,20 @@ footer.site a:hover { color: var(--bone); }
 .ig-link:hover { color: var(--ember); transform: translateY(-1px); }
 .mobile-menu .ig-link.big { margin-top: 18px; color: var(--bone); }
 .mobile-menu .ig-link.big:hover { color: var(--ember); }
+
+/* ── Hero collage (grid — text can never be covered) ────────── */
+.collage {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: 10px 14px 14px 0;
+}
+.collage .fcard { position: static; width: auto; }
+.fcard.c-main { grid-row: 1 / span 2; box-shadow: 10px 10px 0 var(--gold-fill); transform: rotate(-1deg); }
+.fcard.c-main img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 10%; margin-bottom: 16px; filter: grayscale(15%) contrast(1.05) brightness(1.28); }
+.fcard.c-widget { transform: rotate(1.2deg) translateY(14px); box-shadow: 7px 7px 0 var(--gold-fill); }
+.fcard.c-dm { transform: rotate(-0.8deg) translateY(26px); box-shadow: 7px 7px 0 rgba(123, 93, 32, 0.55); }
+.toast.c-toast { position: static; grid-column: 1 / -1; width: 92%; transform: rotate(0.5deg); margin-top: 2px; }
+@media (max-width: 900px) { .collage { margin-top: 16px; } }
+@media (max-width: 640px) { .collage { display: none; } }
