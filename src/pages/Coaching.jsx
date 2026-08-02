@@ -48,60 +48,41 @@ export default function Coaching() {
         </div>
       </section>
 
-      {/* PRICING — light */}
+      {/* THE OFFER — light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">Pricing</span></Reveal>
-          <Reveal><h2>Transparent. No lock-in.<br />No surprises.</h2></Reveal>
-          {/* [EDIT-PRICE] set real prices — these are placeholders */}
-          <div className="pricing">
-            <Reveal className="price-card hot">
-              <div>
-                <div className="flag">Most popular</div>
-                <div className="tier">Ongoing coaching</div>
-                <div className="amount">$65<small> /week</small></div>
-                <p className="per">Month-to-month · cancel anytime</p>
-                <ul>
-                  <li>Custom program, updated every block</li>
-                  <li>Weekly Zoom check-in + 7-day DM support</li>
-                  <li>Progress tracking + monthly review</li>
-                  <li>Priority DM response</li>
-                </ul>
+          <Reveal><span className="label">The offer</span></Reveal>
+          <Reveal><h2>One service. Done properly.</h2></Reveal>
+          <Reveal>
+            <div className="offer-card">
+              <div className="offer-head">
+                <div>
+                  <div className="tier">1:1 Online Coaching</div>
+                  <p className="offer-sub">Fully personalised, month to month, no lock-in. Investment discussed on your free intro call — so the plan fits your goals before we ever talk numbers.</p>
+                </div>
+                <Link className="btn" to="/contact">Book your free intro call</Link>
               </div>
-              <Link className="btn" to="/contact">Book your free intro call</Link>
-            </Reveal>
-            <Reveal delay={0.08} className="price-card">
-              <div>
-                <div className="tier">Kickstart</div>
-                <div className="amount">$79<small> /week</small></div>
-                <p className="per">8-week beginner block · billed weekly</p>
-                <ul>
-                  <li>Custom program + technique library</li>
-                  <li>Weekly Zoom check-in</li>
-                  <li>DM support 7 days</li>
-                  <li>Form-check video reviews</li>
-                </ul>
-              </div>
-              <Link className="btn ghost" to="/contact">Start with a free call</Link>
-            </Reveal>
-            <Reveal delay={0.16} className="price-card">
-              <div>
-                <div className="tier">Program only</div>
-                <div className="amount">$149<small> one-off</small></div>
-                <p className="per">Self-guided · 8-week custom block</p>
-                <ul>
-                  <li>Custom program for your goal</li>
-                  <li>Exercise technique notes</li>
-                  <li>One kick-off Zoom call</li>
-                  <li>Upgrade to coaching anytime</li>
-                </ul>
-              </div>
-              <Link className="btn ghost" to="/contact">Ask about programs</Link>
-            </Reveal>
-          </div>
+              <details className="offer-more">
+                <summary>See everything that's included</summary>
+                <div className="offer-detail">
+                  <ul>
+                    <li>Custom gym program, rebuilt every training block</li>
+                    <li>Weekly 1:1 Zoom check-in — review, adjust, plan</li>
+                    <li>DM support 7 days — questions, wins, wobbles</li>
+                    <li>Form-check video reviews with same-day feedback</li>
+                  </ul>
+                  <ul>
+                    <li>Everfit coaching app — program, videos, logging</li>
+                    <li>Progress tracking: lifts, measurements, photos (opt-in)</li>
+                    <li>Beginner-first technique coaching from day one</li>
+                    <li>First-week guarantee + cancel anytime</li>
+                  </ul>
+                </div>
+              </details>
+            </div>
+          </Reveal>
           <Reveal><p className="sub" style={{ marginTop: 26, fontSize: '0.85rem' }}>
             First intro call is always free. Honest recommendation — even if it's not me.
-            All plans covered by the first-week guarantee — if week one isn't the clearest training you've done, it's free.
           </p></Reveal>
         </div>
       </section>
@@ -145,7 +126,7 @@ export default function Coaching() {
                   <tr><td>Coach in your DMs</td><td className="me yes">✓ 7 days</td><td>✗</td><td>✗</td></tr>
                   <tr><td>Form-check videos</td><td className="me yes">✓ Included</td><td>In session only</td><td>✗</td></tr>
                   <tr><td>Train on your schedule</td><td className="me yes">✓ Any gym, any time</td><td>✗ Booked slots</td><td>✓</td></tr>
-                  <tr><td>Typical cost</td><td className="me">From $65/wk</td><td>$80–120/session</td><td>$15–30/mo</td></tr>
+                  <tr><td>Pricing</td><td className="me">Tailored — discussed on your call</td><td>$80–120/session</td><td>$15–30/mo</td></tr>
                   <tr><td>Lock-in contract</td><td className="me yes">None</td><td>Often 10+ sessions</td><td>Annual plans</td></tr>
                 </tbody>
               </table>

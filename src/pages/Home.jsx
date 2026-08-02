@@ -29,7 +29,7 @@ export default function Home() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
               <span className="hero-badge"><span className="dot" />Now accepting new clients</span>
             </motion.div>
-            <motion.h1 initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
+            <motion.h1 aria-label="Strength for people starting out." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
               {['Strength', 'for', 'people'].map(w => (
                 <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w} </motion.span>
               ))}
@@ -51,7 +51,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.22 }}
             >
               <Link className="btn" to="/contact">Book your free intro call</Link>
-              <Link className="btn ghost" to="/coaching">See coaching &amp; pricing</Link>
+              <Link className="btn ghost" to="/coaching">Explore the coaching</Link>
             </motion.div>
             <motion.div className="hero-meta"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}

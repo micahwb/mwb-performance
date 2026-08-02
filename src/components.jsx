@@ -211,7 +211,7 @@ export const Footer = () => (
         <div>
           <h4>Explore</h4>
           <ul>
-            <li><Link to="/coaching">Coaching &amp; pricing</Link></li>
+            <li><Link to="/coaching">Coaching</Link></li>
             <li><Link to="/results">Results</Link></li>
             <li><Link to="/about">About Micah</Link></li>
             <li><Link to="/blog">Blog</Link></li>
