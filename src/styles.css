@@ -74,7 +74,7 @@ h3 { font-weight: 800; font-size: clamp(1.05rem, 2vw, 1.3rem); letter-spacing: 0
   color: var(--ember);
   margin-bottom: 20px;
 }
-.label::before { content: ''; display: inline-block; width: 11px; height: 11px; margin-right: 9px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
+.label::before { content: ''; display: inline-block; width: 20px; height: 20px; margin-right: 10px; vertical-align: -5px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
 .light .label::before { background-image: url('../icons/bullet-light.png'); }
 .sub { color: var(--grey-on-dark); max-width: 620px; font-size: 1.05rem; }
 .light .sub { color: var(--grey-on-light); }
@@ -581,7 +581,7 @@ footer.site a:hover { color: var(--bone); }
 .offer-detail ul { list-style: none; display: grid; gap: 10px; }
 .offer-detail li { color: var(--grey-on-light); font-size: 0.95rem; }
 .offer-detail li { display: flex; gap: 10px; align-items: flex-start; }
-.offer-detail li::before { content: ''; flex: 0 0 14px; height: 14px; margin-top: 5px; background: url('../icons/bullet-light.png') center/contain no-repeat; }
+.offer-detail li::before { content: ''; flex: 0 0 22px; height: 22px; margin-top: 2px; background: url('../icons/bullet-light.png') center/contain no-repeat; }
 
 /* hero dashboard content */
 .mini { display: grid; grid-template-columns: 1fr auto; gap: 1px 10px; margin-bottom: 7px; font-size: 0.76rem; }
@@ -601,15 +601,15 @@ footer.site a:hover { color: var(--bone); }
 .gt:hover:not(.on) { color: var(--bone); }
 
 /* custom generated iconography */
-.cell-ico { width: 44px; height: 44px; object-fit: contain; margin-bottom: 16px; border-radius: 4px; }
+.cell-ico { width: 68px; height: 68px; object-fit: contain; margin-bottom: 16px; border-radius: 4px; }
 .price-card ul li::before { content: none; }
 
 /* icons deployed site-wide */
 .feat b { display: flex; align-items: center; gap: 8px; }
 .feat b::before { content: ''; width: 13px; height: 13px; background: url('../icons/bullet-dark.png') center/contain no-repeat; flex: 0 0 13px; }
-footer.site h4::before { content: ''; display: inline-block; width: 11px; height: 11px; margin-right: 8px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
-.wday i::before { content: ''; display: inline-block; width: 11px; height: 11px; margin-right: 7px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
-.compare .yes { background-image: url('../icons/tick-dark.png'); background-repeat: no-repeat; background-position: left center; background-size: 13px; padding-left: 20px; }
+footer.site h4::before { content: ''; display: inline-block; width: 16px; height: 16px; margin-right: 9px; vertical-align: -3px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
+.wday i::before { content: ''; display: inline-block; width: 16px; height: 16px; margin-right: 8px; vertical-align: -3px; background: url('../icons/bullet-dark.png') center/contain no-repeat; }
+.compare .yes { background-image: url('../icons/tick-dark.png'); background-repeat: no-repeat; background-position: left center; background-size: 20px; padding-left: 28px; }
 .hero-badge .dot { background: url('../icons/bullet-dark.png') center/contain no-repeat; width: 12px; height: 12px; animation: none; }
 
 /* hero CTA upgrade */
@@ -623,8 +623,8 @@ footer.site h4::before { content: ''; display: inline-block; width: 11px; height
 .post-h { margin-top: 10px; }
 /* app feature icons */
 .feat b::before { content: none; }
-.feat { display: grid; grid-template-columns: 30px 1fr; gap: 4px 12px; }
-.feat img.fico { width: 26px; height: 26px; grid-row: 1 / span 2; margin-top: 2px; border-radius: 3px; }
+.feat { display: grid; grid-template-columns: 46px 1fr; gap: 4px 14px; }
+.feat img.fico { width: 42px; height: 42px; grid-row: 1 / span 2; margin-top: 2px; border-radius: 3px; }
 .feat b { display: block; }
 .feat span { grid-column: 2; }
 
@@ -676,9 +676,9 @@ footer.site h4::before { content: ''; display: inline-block; width: 11px; height
 
 /* flavour glyph wiring */
 .show-up { display: inline-flex; align-items: center; gap: 8px; }
-.show-up img { width: 18px; height: 18px; }
-.mq-glyph { display: inline-block; width: 15px; height: 15px; vertical-align: -2px; margin: 0 4px; }
+.show-up img { width: 30px; height: 30px; }
+.mq-glyph { display: inline-block; width: 26px; height: 26px; vertical-align: -6px; margin: 0 6px; }
 .marquee span { display: inline-flex; align-items: center; gap: 12px; }
 .mode-chips span { display: inline-flex; align-items: center; gap: 7px; }
 .mode-chips img { width: 14px; height: 14px; }
-.jstep .jcap { width: 30px; height: 30px; float: right; margin-top: -6px; }
+.jstep .jcap { width: 48px; height: 48px; float: right; margin-top: -10px; }
