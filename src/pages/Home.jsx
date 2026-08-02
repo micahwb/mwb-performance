@@ -19,15 +19,10 @@ const Float = ({ className, delay, children }) => (
   </motion.div>
 )
 
-const GOALS = {
-  'Build muscle': { word: 'muscle.', lift: ['Goblet squat', '16 \u2192 24kg', '75%'], focus: 'Hypertrophy block \u00b7 3 days/wk' },
-  'Get stronger': { word: 'strength.', lift: ['Deadlift', '60 \u2192 85kg', '84%'], focus: 'Strength block \u00b7 3 days/wk' },
-  'Lose fat': { word: 'momentum.', lift: ['Bench press', '30 \u2192 42.5kg', '62%'], focus: 'Recomp block \u00b7 3 days/wk + steps' },
-}
+const GOALS = { 'Build muscle': 'muscle.', 'Get stronger': 'strength.', 'Lose fat': 'momentum.' }
 
 export default function Home() {
   const [goal, setGoal] = useState('Build muscle')
-  const g = GOALS[goal]
   usePageMeta('MWB Performance — Online & In-Person Strength Coaching | Christchurch NZ', '1:1 strength coaching for beginners with Micah Barker — in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, daily DM support.')
   return (
     <>
@@ -40,12 +35,12 @@ export default function Home() {
             </motion.p>
             <motion.h1 aria-label="Beginners leave here with muscle." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
               {['Beginners', 'leave'].map(w => (
-                <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w} </motion.span>
+                <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w}{'\u00A0'}</motion.span>
               ))}
               <br />
-              <motion.span className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>here with </motion.span>
+              <motion.span className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>here with{'\u00A0'}</motion.span>
               <AnimatePresence mode="wait">
-                <motion.span key={goal} className="hw accent" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -18 }} transition={{ duration: 0.35, ease: 'easeOut' }}>{g.word}</motion.span>
+                <motion.span key={goal} className="hw accent" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -18 }} transition={{ duration: 0.35, ease: 'easeOut' }}>{GOALS[goal]}</motion.span>
               </AnimatePresence>
             </motion.h1>
             <motion.p className="lead"
@@ -68,51 +63,29 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.22 }}
             >
-              <span>
-                <Link className="btn xl" to="/contact">Book your free intro call →</Link>
-                <span className="cta-note">20 minutes · $0 · no pressure · in-person or online</span>
-              </span>
-              <Link className="btn ghost" to="/coaching">Explore the coaching</Link>
+              <Link className="btn xl" to="/contact">Book your free intro call →</Link>
+              <Link className="hero-link" to="/coaching">Explore the coaching →</Link>
+              <span className="cta-note" style={{ flexBasis: '100%' }}>20 minutes · $0 · no pressure · in-person or online</span>
             </motion.div>
             <motion.div className="hero-meta"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
             >
-              <span className="live"><i className="livedot" />Now accepting clients</span>
-              <span><b>NZ-qualified</b> L4 PT</span>
-              <span><b>In-person</b> · Christchurch</span>
+              <span className="live"><i className="livedot" />Accepting clients</span>
+              <span><b>L4</b> qualified</span>
+              <span><b>In-person</b> · CHCH</span>
               <span><b>Online</b> · NZ-wide</span>
             </motion.div>
           </div>
 
-          <div className="collage">
-            <Float className="c-main" delay={0.2}>
-              <img src="./images/gym_2.jpg" alt="" />
-              <div className="fk">This week</div>
-              <div className="fv">Weekly check-in · Zoom</div>
-              <div className="fs">Custom program · Week 4 of 12</div>
-              <div className="bar-track"><div className="bar-fill" /></div>
-            </Float>
-            <Float className="c-widget" delay={0.4}>
-              <div className="fk">Block 1 · lifts moving</div>
-              <div className="mini"><span>{g.lift[0]}</span><em>{g.lift[1]}</em><div className="mini-bar"><motion.i animate={{ width: g.lift[2] }} transition={{ duration: 0.7, ease: 'easeOut' }} style={{ display: 'block', height: '100%', background: 'var(--gold-fill)' }} /></div></div>
-              <div className="mini"><span>Overhead press</span><em>20 → 27.5kg</em><div className="mini-bar"><i style={{ width: '58%' }} /></div></div>
-              <div className="mini"><span>Seated row</span><em>35 → 50kg</em><div className="mini-bar"><i style={{ width: '71%' }} /></div></div>
-              <div className="fs" style={{ marginTop: 12 }}>{g.focus}</div>
-            </Float>
-            <Float className="c-dm" delay={0.6}>
-              <div className="fk">DM support · today</div>
-              <div className="chat-line coach"><b>Micah</b>Depth looks way better — add 2.5kg next session.</div>
-              <div className="chat-line you">On it 💪</div>
-              <div className="chat-line coach"><b>Micah</b>That's a PB by the way. Logged it.</div>
-            </Float>
-            <motion.div
-              className="toast c-toast"
-              initial={{ opacity: 0, x: 60 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 2.2, duration: 0.5, ease: 'easeOut' }}
-            >
-              <b>New PB —</b> goblet squat 24kg × 10. Week 6.
-            </motion.div>
+          <div className="hero-portrait">
+            <motion.img src="./images/gym_2.jpg" alt="Micah Barker — MWB Performance coach"
+              initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }} />
+            <span className="side-mark" aria-hidden="true">MWB · PERFORMANCE</span>
+            <div className="mode-chips">
+              <span>In the gym · Christchurch</span>
+              <span>In your pocket · NZ-wide</span>
+            </div>
           </div>
         </div>
       </section>
