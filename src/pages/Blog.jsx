@@ -76,7 +76,7 @@ export function Post() {
         <div className="wrap article">
           <Reveal><img className="post-hero reveal-wipe" src={post.image} alt="" /></Reveal>
           {post.body.map((b, i) =>
-            b.h ? <h2 key={i} className="post-h">{b.h}</h2> : <p key={i} className="post-p">{b.p}</p>
+            b.h ? <div key={i}><div className="brk"><i /></div><h2 className="post-h">{b.h}</h2></div> : <p key={i} className="post-p">{b.p}</p>
           )}
           <div className="post-back">
             <Link className="btn ghost sm" to="/blog">← All articles</Link>

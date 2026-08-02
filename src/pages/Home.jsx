@@ -65,7 +65,10 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.22 }}
             >
-              <Link className="btn" to="/contact">Book your free intro call</Link>
+              <span>
+                <Link className="btn xl" to="/contact">Book your free intro call →</Link>
+                <span className="cta-note">20 minutes · $0 · no pressure · in-person or online</span>
+              </span>
               <Link className="btn ghost" to="/coaching">Explore the coaching</Link>
             </motion.div>
             <motion.div className="hero-meta"
@@ -173,10 +176,10 @@ export default function Home() {
               Everfit app — so the plan is always with you, and so am I.
             </p></Reveal>
             <Stagger className="app-feats">
-              <Item className="feat"><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
-              <Item className="feat"><b>Log every set</b><span>Weights, reps and PBs tracked — progress you can actually see.</span></Item>
-              <Item className="feat"><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
-              <Item className="feat"><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
+              <Item className="feat"><img className="fico" src="./icons/ico-program.png" alt="" /><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
+              <Item className="feat"><img className="fico" src="./icons/ico-log.png" alt="" /><b>Log every set</b><span>Weights, reps and PBs tracked — progress you can actually see.</span></Item>
+              <Item className="feat"><img className="fico" src="./icons/ico-video.png" alt="" /><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
+              <Item className="feat"><img className="fico" src="./icons/ico-chat.png" alt="" /><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
             </Stagger>
             <Reveal><Everfit /></Reveal>
           </div>
