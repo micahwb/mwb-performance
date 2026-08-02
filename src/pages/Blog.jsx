@@ -23,11 +23,9 @@ export function Blog() {
         <div className="wrap">
           <Reveal>
             <Link className="local-banner" to="/personal-trainer-christchurch">
-              <img className="lb-mark" src="/icons/chch-mark.png" alt="" />
               <span className="lb-body">
-                <span className="lb-kick">Christchurch locals</span>
-                <span className="lb-txt">Train with Micah in person</span>
-                <span className="lb-sub">1:1 personal training in the gym — technique-first coaching for beginners.</span>
+                <span className="lb-txt">Personal training in Christchurch</span>
+                <span className="lb-sub">Train with Micah in person — technique-first coaching for beginners.</span>
               </span>
               <span className="lb-cta">Start here →</span>
             </Link>

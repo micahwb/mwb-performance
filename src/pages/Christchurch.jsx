@@ -10,7 +10,6 @@ export default function Christchurch() {
     <>
       <section className="page-head">
         <div className="wrap">
-          <Reveal><img className="chch-emblem" src="/icons/chch-mark.png" alt="" /></Reveal>
           <Reveal><span className="label">Christchurch</span></Reveal>
           <Reveal><h1>Personal trainer in <span className="accent">Christchurch.</span></h1></Reveal>
           <Reveal><p className="sub" style={{ marginTop: 20 }}>
