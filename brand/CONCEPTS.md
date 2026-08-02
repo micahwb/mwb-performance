@@ -5,7 +5,7 @@
 | # | File | Concept |
 |---|---|---|
 | 1 | `1-chevron-W-wordmark.png` | **Chevron Peak** — MWB with the W's apex rising into a bronze chevron, PERFORMANCE tracked out below. Type-led, chest-print ready. ⭐ Best overall fit with the site. |
-| 2 | `2-speed-M-badge.png` | **Speed M** — slanted M with speed cuts in a bronze square + stacked name. Most "motion/energy". |
+| 2 | `2-speed-M-badge.png` | **Speed M** — slanted M with speed cuts in a bronze square + stacked name. ✅ **CHOSEN — live on the site.** |
 | 3 | `3-plate-monogram.png` | **Plate Monogram** — weight-plate circle with M knockout + horizontal name lockup. Most classic gym. |
 | 4 | `4-bar-M-stack.png` | **Bar M** — M with barbell-upright stems, name beneath. Subtlest. |
 | 5 | `5-block-badge.png` | **Block Badge** — solid bronze square, massive stacked MWB., PERFORMANCE along the base. Most brutalist — literally matches the website's design language. |

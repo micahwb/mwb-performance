@@ -97,8 +97,7 @@ export const Nav = () => {
       <div className="nav-shell">
         <div className="wrap nav">
           <Link className="logo" to="/" aria-label="MWB Performance — home">
-            <img src="./mark.svg" alt="" width="34" height="34" />
-            <span><b>MWB.</b> Performance</span>
+            <img className="lockup" src="./logo-lockup.png" alt="MWB Performance" />
           </Link>
           <ul className="nav-links">
             {LINKS.map(l => (
@@ -184,8 +183,7 @@ export const Footer = () => (
       <div className="foot">
         <div>
           <Link className="logo" to="/">
-            <img src="./mark.svg" alt="" width="34" height="34" />
-            <span><b>MWB.</b> Performance</span>
+            <img className="lockup" src="./logo-lockup.png" alt="MWB Performance" />
           </Link>
           <p style={{ marginTop: 18, maxWidth: 380 }}>
             1:1 online strength coaching that meets you where you are. Custom programs,
