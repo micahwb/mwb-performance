@@ -431,3 +431,9 @@ footer.site a:hover { color: var(--bone); }
 .post-back { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 44px; border-top: 1px solid var(--line); padding-top: 28px; }
 
 @media (max-width: 480px) { .logo img.lockup { height: 30px; } }
+
+/* ── Instagram nav icon ─────────────────────────────────────── */
+.ig-link { display: inline-flex; align-items: center; color: var(--grey-on-dark); padding: 6px; transition: color 150ms ease, transform 150ms ease; }
+.ig-link:hover { color: var(--ember); transform: translateY(-1px); }
+.mobile-menu .ig-link.big { margin-top: 18px; color: var(--bone); }
+.mobile-menu .ig-link.big:hover { color: var(--ember); }

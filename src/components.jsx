@@ -8,7 +8,7 @@ export const CONFIG = {
   FORM_ENDPOINT: '',
   /* [EDIT-EMAIL] your real email */
   EMAIL: 'hello@mwbperformance.co',
-  INSTAGRAM: 'https://instagram.com/mwbcoaching',
+  INSTAGRAM: 'https://www.instagram.com/mwbcoaching/',
   LINKEDIN: 'https://www.linkedin.com/in/micah-barker-4b527b338/',
 }
 
@@ -79,6 +79,16 @@ export const Count = ({ to, suffix = '', prefix = '' }) => {
   return <span ref={ref}>{prefix}{n}{suffix}</span>
 }
 
+/* ── Instagram icon ──────────────────────────────────────────── */
+export const InstaIcon = ({ size = 20 }) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+    <rect x="2.5" y="2.5" width="19" height="19" rx="5.2" />
+    <circle cx="12" cy="12" r="4.4" />
+    <circle cx="17.6" cy="6.4" r="1.15" fill="currentColor" stroke="none" />
+  </svg>
+)
+
 /* ── Nav ─────────────────────────────────────────────────────── */
 const LINKS = [
   { to: '/coaching', label: 'Coaching' },
@@ -107,6 +117,11 @@ export const Nav = () => {
                 </NavLink>
               </li>
             ))}
+            <li>
+              <a className="ig-link" href={CONFIG.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="MWB on Instagram — @mwbcoaching">
+                <InstaIcon />
+              </a>
+            </li>
             <li><Link className="btn sm" to="/contact">Free intro call</Link></li>
           </ul>
           <button
@@ -134,6 +149,9 @@ export const Nav = () => {
                 {l.label}
               </NavLink>
             ))}
+            <a className="ig-link big" href={CONFIG.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="MWB on Instagram — @mwbcoaching">
+              <InstaIcon size={30} />
+            </a>
           </motion.nav>
         )}
       </AnimatePresence>
