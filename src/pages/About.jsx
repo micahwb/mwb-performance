@@ -59,10 +59,10 @@ export default function About() {
         <div className="wrap">
           <Reveal><span className="label">The path here</span></Reveal>
           <Stagger className="journey">
-            <Item className="jstep"><b>The first rep</b><p>Started as the beginner I now coach — unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
-            <Item className="jstep"><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) — the foundation done properly: anatomy, programming, safe progression.</p></Item>
-            <Item className="jstep"><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach — because "qualified" is a starting line, not a finish line.</p></Item>
-            <Item className="jstep hot"><img className="jcap" src="./icons/glyph-cap.png" alt="" /><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners — the coach I needed on day one.</p></Item>
+            <Item className="jstep"><img className="jico" src="./icons/glyph-sneaker.png" alt="" /><b>The first rep</b><p>Started as the beginner I now coach — unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
+            <Item className="jstep"><img className="jico" src="./icons/tick-dark.png" alt="" /><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) — the foundation done properly: anatomy, programming, safe progression.</p></Item>
+            <Item className="jstep"><img className="jico" src="./icons/bullet-dark.png" alt="" /><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach — because "qualified" is a starting line, not a finish line.</p></Item>
+            <Item className="jstep hot"><img className="jico" src="./icons/glyph-cap.png" alt="" /><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners — the coach I needed on day one.</p></Item>
           </Stagger>
         </div>
       </section>

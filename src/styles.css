@@ -151,7 +151,7 @@ h3 { font-weight: 800; font-size: clamp(1.05rem, 2vw, 1.3rem); letter-spacing: 0
 /* ── Hero ───────────────────────────────────────────────────── */
 .hero {
   position: relative;
-  min-height: calc(100svh - 75px);
+  min-height: calc(100svh - 138px);
   display: flex; align-items: center;
   padding: clamp(20px, 3vw, 40px) 0;
   background-image:
@@ -554,7 +554,7 @@ footer.site a:hover { color: var(--bone); }
 .jstep::before { counter-increment: j; content: counter(j, decimal-leading-zero); font-weight: 900; font-size: 1.6rem; color: var(--ember); display: block; margin-bottom: 12px; }
 .jstep b { display: block; font-size: 1rem; margin-bottom: 8px; color: var(--white); }
 .jstep p { color: var(--grey-on-dark); font-size: 0.86rem; }
-.jstep.hot { background: var(--card); border-top: 3px solid var(--gold-fill); }
+.jstep.hot { background: var(--ink); border-top: 3px solid var(--gold-fill); }
 
 .foot-mark {
   font-family: var(--font-display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em;
@@ -681,4 +681,4 @@ footer.site h4::before { content: ''; display: inline-block; width: 16px; height
 .marquee span { display: inline-flex; align-items: center; gap: 12px; }
 .mode-chips span { display: inline-flex; align-items: center; gap: 7px; }
 .mode-chips img { width: 14px; height: 14px; }
-.jstep .jcap { width: 48px; height: 48px; float: right; margin-top: -10px; }
+.jstep .jico { width: 46px; height: 46px; float: right; margin: -4px 0 8px 10px; }
