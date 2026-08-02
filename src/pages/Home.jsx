@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta, Everfit } from '../components.jsx'
@@ -23,6 +23,15 @@ const GOALS = { 'Build muscle': 'muscle.', 'Get stronger': 'strength.', 'Lose fa
 
 export default function Home() {
   const [goal, setGoal] = useState('Build muscle')
+  const paused = useRef(false)
+  useEffect(() => {
+    const keys = Object.keys(GOALS)
+    const t = setInterval(() => {
+      if (!paused.current) setGoal(g => keys[(keys.indexOf(g) + 1) % keys.length])
+    }, 3400)
+    return () => clearInterval(t)
+  }, [])
+  const pickGoal = (k) => { paused.current = true; setGoal(k) }
   usePageMeta('MWB Performance — Online & In-Person Strength Coaching | Christchurch NZ', '1:1 strength coaching for beginners with Micah Barker — in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, daily DM support.')
   return (
     <>
@@ -33,12 +42,12 @@ export default function Home() {
             <motion.p className="overline" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
               Strength coaching · Christchurch &amp; online NZ
             </motion.p>
-            <motion.h1 aria-label="Beginners leave here with muscle." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
-              {['Beginners', 'leave'].map(w => (
+            <motion.h1 aria-label="Walk in a beginner. Leave with muscle." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
+              {['Walk', 'in', 'a', 'beginner.'].map(w => (
                 <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w}{'\u00A0'}</motion.span>
               ))}
               <br />
-              <motion.span className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>here with{'\u00A0'}</motion.span>
+              <motion.span className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>Leave with{'\u00A0'}</motion.span>
               <AnimatePresence mode="wait">
                 <motion.span key={goal} className="hw accent" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -18 }} transition={{ duration: 0.35, ease: 'easeOut' }}>{GOALS[goal]}</motion.span>
               </AnimatePresence>
@@ -56,7 +65,7 @@ export default function Home() {
             >
               <span className="goal-lbl">Your goal —</span>
               {Object.keys(GOALS).map(k => (
-                <button key={k} role="tab" aria-selected={goal === k} className={goal === k ? 'gl on' : 'gl'} onClick={() => setGoal(k)}>{k}</button>
+                <button key={k} role="tab" aria-selected={goal === k} className={goal === k ? 'gl on' : 'gl'} onClick={() => pickGoal(k)}>{k}</button>
               ))}
             </motion.div>
             <motion.div className="hero-ctas"

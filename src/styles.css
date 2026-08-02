@@ -695,3 +695,6 @@ footer.site h4::before { content: ''; display: inline-block; width: 16px; height
   box-shadow: 0 0 22px rgba(201, 161, 75, 0.8), 0 0 5px rgba(201, 161, 75, 1), inset 0 0 10px rgba(201, 161, 75, 0.35);
   transform: none;
 }
+
+/* hero primary CTA — matching neon */
+.btn.xl { border: 2px solid #D9AE5A; color: #FFFFFF; box-shadow: 0 0 16px rgba(217,174,90,0.5), 6px 6px 0 rgba(123,93,32,0.45); text-shadow: 0 0 7px rgba(255,255,255,0.4); }
