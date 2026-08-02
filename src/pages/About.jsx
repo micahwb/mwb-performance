@@ -1,4 +1,4 @@
-import { Reveal, CtaBanner, usePageMeta } from '../components.jsx'
+import { Reveal, Stagger, Item, CtaBanner, usePageMeta } from '../components.jsx'
 
 export default function About() {
     usePageMeta('About Micah Barker — MWB Performance', 'Meet Micah Barker: Christchurch-based L4 personal trainer specialising in beginner resistance training for hypertrophy, strength and fat loss.')
