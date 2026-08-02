@@ -9,6 +9,7 @@ import Results from './pages/Results.jsx'
 import Contact from './pages/Contact.jsx'
 import { Blog, Post } from './pages/Blog.jsx'
 import { Privacy, Terms } from './pages/Legal.jsx'
+import Christchurch from './pages/Christchurch.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 const Page = ({ children }) => (
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/contact" element={<Page><Contact /></Page>} />
           <Route path="/blog" element={<Page><Blog /></Page>} />
           <Route path="/blog/:slug" element={<Page><Post /></Page>} />
+          <Route path="/personal-trainer-christchurch" element={<Page><Christchurch /></Page>} />
           <Route path="/privacy" element={<Page><Privacy /></Page>} />
           <Route path="/terms" element={<Page><Terms /></Page>} />
           <Route path="*" element={<Page><NotFound /></Page>} />

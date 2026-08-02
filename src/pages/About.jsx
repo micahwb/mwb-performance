@@ -16,7 +16,7 @@ export default function About() {
           <Reveal>
             {/* [EDIT] replace with a friendly, well-lit photo of Micah */}
             <div className="duotone">
-              <img src="./images/gym_1.jpg" alt="Micah Barker, MWB Performance coach" />
+              <img src="/images/gym_1.jpg" alt="Micah Barker, MWB Performance coach" />
               <span className="tag">Micah Barker · Coach</span>
             </div>
           </Reveal>
@@ -59,10 +59,10 @@ export default function About() {
         <div className="wrap">
           <Reveal><span className="label">The path here</span></Reveal>
           <Stagger className="journey">
-            <Item className="jstep"><img className="jico" src="./icons/j1-first-rep.png" alt="" /><b>The first rep</b><p>Started as the beginner I now coach — unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
-            <Item className="jstep"><img className="jico" src="./icons/j2-qualified.png" alt="" /><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) — the foundation done properly: anatomy, programming, safe progression.</p></Item>
-            <Item className="jstep"><img className="jico" src="./icons/j3-studying.png" alt="" /><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach — because "qualified" is a starting line, not a finish line.</p></Item>
-            <Item className="jstep hot"><img className="jico" src="./icons/j4-summit.png" alt="" /><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners — the coach I needed on day one.</p></Item>
+            <Item className="jstep"><img className="jico" src="/icons/j1-first-rep.png" alt="" /><b>The first rep</b><p>Started as the beginner I now coach — unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
+            <Item className="jstep"><img className="jico" src="/icons/j2-qualified.png" alt="" /><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) — the foundation done properly: anatomy, programming, safe progression.</p></Item>
+            <Item className="jstep"><img className="jico" src="/icons/j3-studying.png" alt="" /><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach — because "qualified" is a starting line, not a finish line.</p></Item>
+            <Item className="jstep hot"><img className="jico" src="/icons/j4-summit.png" alt="" /><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners — the coach I needed on day one.</p></Item>
           </Stagger>
         </div>
       </section>

@@ -133,3 +133,9 @@ Jordan Stirling-Rowling — **also a Christchurch PT, also Everfit-powered** —
 - About: editorial pull-quote band.
 - Motion: staggered word-reveal hero headline, clip-path wipe image reveals, blog reading-progress bar, image zoom-on-hover cards, price-card hover lifts, marquee pause-on-hover — all respecting prefers-reduced-motion.
 **Final Gemini vision pass** (`audit/gemini-final-pass.md`): contrast FIXED, typography rhythm FIXED; its two nits (guide CTA weight — fixed to solid; hairline dividers — intentional) closed or accepted.
+
+
+## v7.0 — SEO unlock (3 Aug 2026)
+- HashRouter → BrowserRouter: all 23 pages now live at real URLs. Build prerenders every route to static HTML with unique title/description/canonical/og (articles get their own og:image), generates sitemap.xml and robots.txt with sitemap reference. Google can now index all 14 articles + pages individually.
+- New local-SEO landing page: /personal-trainer-christchurch (query-targeted h1/meta, local FAQ incl. price question, cross-links to guides) — linked from a banner at the top of the blog and the footer.
+- Deploy note: requires domain-root hosting + SPA fallback (404.html included); Search Console + sitemap submission listed in README.

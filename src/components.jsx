@@ -107,7 +107,7 @@ export const Nav = () => {
       <div className="nav-shell">
         <div className="wrap nav">
           <Link className="logo" to="/" aria-label="MWB Performance — home">
-            <img className="lockup" src="./logo-lockup.png" alt="MWB Performance" />
+            <img className="lockup" src="/logo-lockup.png" alt="MWB Performance" />
           </Link>
           <ul className="nav-links">
             {LINKS.map(l => (
@@ -162,7 +162,7 @@ export const Nav = () => {
 /* ── Marquee ─────────────────────────────────────────────────── */
 export const Marquee = () => {
   const items = ['Build muscle', 'Gain strength', 'Lose fat', 'Train anywhere', 'Beginner friendly', '1:1 coaching']
-  const strip = items.map((s, i) => <span key={i}>{s} <img className="mq-glyph" src="./icons/glyph-plate.png" alt="" /></span>)
+  const strip = items.map((s, i) => <span key={i}>{s} <img className="mq-glyph" src="/icons/glyph-plate.png" alt="" /></span>)
   return (
     <div className="marquee" aria-hidden="true">
       <div className="marquee-track">{strip}{strip}</div>
@@ -175,7 +175,7 @@ export const Everfit = ({ note }) => (
   <div className="everfit">
     <span className="pb">Powered by</span>
     <a href="https://everfit.io" target="_blank" rel="noopener noreferrer" aria-label="Everfit coaching app">
-      <img src="./everfit-white.svg" alt="Everfit" height="22" loading="lazy" />
+      <img src="/everfit-white.svg" alt="Everfit" height="22" loading="lazy" />
     </a>
     {note && <span className="note">{note}</span>}
   </div>
@@ -201,7 +201,7 @@ export const Footer = () => (
       <div className="foot">
         <div>
           <Link className="logo" to="/">
-            <img className="lockup" src="./logo-lockup.png" alt="MWB Performance" />
+            <img className="lockup" src="/logo-lockup.png" alt="MWB Performance" />
           </Link>
           <p style={{ marginTop: 18, maxWidth: 380 }}>
             1:1 strength coaching that meets you where you are — in person in Christchurch
@@ -215,6 +215,7 @@ export const Footer = () => (
             <li><Link to="/results">Results</Link></li>
             <li><Link to="/about">About Micah</Link></li>
             <li><Link to="/blog">Blog</Link></li>
+            <li><Link to="/personal-trainer-christchurch">Personal trainer Christchurch</Link></li>
             <li><Link to="/contact">Contact</Link></li>
             <li><Link to="/privacy">Privacy policy</Link></li>
             <li><Link to="/terms">Terms &amp; conditions</Link></li>
@@ -233,7 +234,7 @@ export const Footer = () => (
       <div className="foot-mark" aria-hidden="true">MWB PERFORMANCE</div>
       <div className="foot-bottom">
         <span>© 2026 MWB Performance</span>
-        <span className="show-up"><img src="./icons/glyph-sneaker.png" alt="" />Built for people who show up</span>
+        <span className="show-up"><img src="/icons/glyph-sneaker.png" alt="" />Built for people who show up</span>
       </div>
     </div>
   </footer>

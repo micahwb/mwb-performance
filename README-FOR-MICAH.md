@@ -40,6 +40,7 @@ Search the `src/` folder for `[EDIT]`:
    (Git history is already set up.) Because the repo is under **your** account, you're the sole owner — Henry never needs access.
 
 ## 4. Free hosting — automatic
+> Note: the site now uses real URLs (`/blog/...`) with pre-rendered pages for Google — every article is individually indexable, and `sitemap.xml` is generated on each build. Host at the domain root (custom domain on GitHub Pages, or Cloudflare Pages/Netlify). After launch, add the site to Google Search Console and submit `https://mwbperformance.com/sitemap.xml`.
 This repo includes a GitHub Action that builds and deploys the site every time you push.
 1. In your repo: **Settings → Pages → Source: GitHub Actions**.
 2. Push (or click **Actions → Deploy to GitHub Pages → Run workflow**).

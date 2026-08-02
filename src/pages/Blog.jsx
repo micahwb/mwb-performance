@@ -21,6 +21,13 @@ export function Blog() {
       </section>
       <section>
         <div className="wrap">
+          <Reveal>
+            <Link className="local-banner" to="/personal-trainer-christchurch">
+              <span className="lb-kick">Local?</span>
+              <span className="lb-txt">Looking for a personal trainer in Christchurch — in the gym, 1:1?</span>
+              <span className="lb-cta">Start here →</span>
+            </Link>
+          </Reveal>
           <div className="post-grid">
             {POSTS.map((p, i) => (
               <Reveal key={p.slug} delay={i * 0.06}>

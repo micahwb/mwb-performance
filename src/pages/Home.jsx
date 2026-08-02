@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           <div className="hero-portrait">
-            <motion.img src="./images/gym_2.jpg" alt="Micah Barker — MWB Performance coach"
+            <motion.img src="/images/gym_2.jpg" alt="Micah Barker — MWB Performance coach"
               initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }} />
             <span className="side-mark" aria-hidden="true">MWB · PERFORMANCE</span>
@@ -108,17 +108,17 @@ export default function Home() {
           <Reveal><h2>Built for people starting out —<br />not for gym veterans.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
-              <img className="cell-ico" src="./icons/ico-door.png" alt="" />
+              <img className="cell-ico" src="/icons/ico-door.png" alt="" />
               <h3>"I don't know where to start"</h3>
               <p>You want to lift weights but the gym floor feels intimidating and every program online says something different.</p>
             </Item>
             <Item className="cell">
-              <img className="cell-ico" src="./icons/ico-restart.png" alt="" />
+              <img className="cell-ico" src="/icons/ico-restart.png" alt="" />
               <h3>"I start, then fall off"</h3>
               <p>You've trained before but without accountability it never sticks past week three. A weekly check-in changes that.</p>
             </Item>
             <Item className="cell">
-              <img className="cell-ico" src="./icons/ico-target.png" alt="" />
+              <img className="cell-ico" src="/icons/ico-target.png" alt="" />
               <h3>"I want real results"</h3>
               <p>Muscle, strength, fat loss, tone — you want a plan built for your goal, your equipment and your actual schedule.</p>
             </Item>
@@ -162,10 +162,10 @@ export default function Home() {
               Everfit app — so the plan is always with you, and so am I.
             </p></Reveal>
             <Stagger className="app-feats">
-              <Item className="feat"><img className="fico" src="./icons/ico-program.png" alt="" /><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
-              <Item className="feat"><img className="fico" src="./icons/ico-log.png" alt="" /><b>Log every set</b><span>Weights, reps and PBs tracked — progress you can actually see.</span></Item>
-              <Item className="feat"><img className="fico" src="./icons/ico-video.png" alt="" /><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
-              <Item className="feat"><img className="fico" src="./icons/ico-chat.png" alt="" /><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
+              <Item className="feat"><img className="fico" src="/icons/ico-program.png" alt="" /><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
+              <Item className="feat"><img className="fico" src="/icons/ico-log.png" alt="" /><b>Log every set</b><span>Weights, reps and PBs tracked — progress you can actually see.</span></Item>
+              <Item className="feat"><img className="fico" src="/icons/ico-video.png" alt="" /><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
+              <Item className="feat"><img className="fico" src="/icons/ico-chat.png" alt="" /><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
             </Stagger>
             <Reveal><Everfit /></Reveal>
           </div>

@@ -2,7 +2,7 @@
 export const POSTS = [
   {
     slug: 'start-lifting-when-the-gym-scares-you',
-    image: './images/blog/gym-anxiety.jpg',
+    image: '/images/blog/gym-anxiety.jpg',
     title: 'How to start lifting weights when the gym scares you',
     date: '2026-07-28',
     minutes: 5,
@@ -23,7 +23,7 @@ export const POSTS = [
   },
   {
     slug: 'how-fast-do-beginners-build-muscle',
-    image: './images/blog/muscle-timeline.jpg',
+    image: '/images/blog/muscle-timeline.jpg',
     title: 'How fast do beginners actually build muscle? A realistic 12-week timeline',
     date: '2026-07-14',
     minutes: 6,
@@ -46,7 +46,7 @@ export const POSTS = [
   },
   {
     slug: 'three-day-beginner-split-that-sticks',
-    image: './images/blog/three-day-split.jpg',
+    image: '/images/blog/three-day-split.jpg',
     title: 'The 3-day beginner split that actually sticks',
     date: '2026-06-30',
     minutes: 5,
@@ -68,7 +68,7 @@ export const POSTS = [
   },
   {
     slug: 'fat-loss-vs-toning-truth',
-    image: './images/blog/fat-loss-toning.jpg',
+    image: '/images/blog/fat-loss-toning.jpg',
     title: "Fat loss vs 'toning up': what's actually happening",
     date: '2026-06-16',
     minutes: 5,
@@ -89,7 +89,7 @@ export const POSTS = [
   },
   {
     slug: 'protein-for-beginners',
-    image: './images/blog/protein-for-beginners.jpg',
+    image: '/images/blog/protein-for-beginners.jpg',
     title: 'Protein for beginners: how much, when, and does it actually matter?',
     date: '2026-06-08',
     minutes: 6,
@@ -112,7 +112,7 @@ export const POSTS = [
   },
   {
     slug: 'gym-bag-essentials',
-    image: './images/blog/gym-bag-essentials.jpg',
+    image: '/images/blog/gym-bag-essentials.jpg',
     title: "The beginner's gym bag: what you actually need (and what's a waste)",
     date: '2026-05-28',
     minutes: 4,
@@ -133,7 +133,7 @@ export const POSTS = [
   },
   {
     slug: 'sore-vs-injured',
-    image: './images/blog/sore-vs-injured.jpg',
+    image: '/images/blog/sore-vs-injured.jpg',
     title: 'Sore or injured? How to tell the difference',
     date: '2026-05-19',
     minutes: 5,
@@ -155,7 +155,7 @@ export const POSTS = [
   },
   {
     slug: 'cardio-and-lifting',
-    image: './images/blog/cardio-and-lifting.jpg',
+    image: '/images/blog/cardio-and-lifting.jpg',
     title: 'Cardio and lifting: how to combine them without killing your gains',
     date: '2026-05-08',
     minutes: 6,
@@ -179,7 +179,7 @@ export const POSTS = [
   },
   {
     slug: 'sleep-and-muscle',
-    image: './images/blog/sleep-and-muscle.jpg',
+    image: '/images/blog/sleep-and-muscle.jpg',
     title: 'Sleep: the training variable nobody logs',
     date: '2026-04-28',
     minutes: 5,
@@ -201,7 +201,7 @@ export const POSTS = [
   },
   {
     slug: 'first-gym-session',
-    image: './images/blog/first-gym-session.jpg',
+    image: '/images/blog/first-gym-session.jpg',
     title: 'Your first gym session: exactly what to do, minute by minute',
     date: '2026-04-17',
     minutes: 6,
@@ -227,7 +227,7 @@ export const POSTS = [
   },
   {
     slug: 'progressive-overload-explained',
-    image: './images/blog/progressive-overload-explained.jpg',
+    image: '/images/blog/progressive-overload-explained.jpg',
     title: 'Progressive overload, explained in plain English',
     date: '2026-04-07',
     minutes: 5,
@@ -251,7 +251,7 @@ export const POSTS = [
   },
   {
     slug: 'training-around-busy-weeks',
-    image: './images/blog/training-around-busy-weeks.jpg',
+    image: '/images/blog/training-around-busy-weeks.jpg',
     title: 'How to keep training when life gets busy',
     date: '2026-03-27',
     minutes: 5,
@@ -274,7 +274,7 @@ export const POSTS = [
   },
   {
     slug: 'common-beginner-mistakes',
-    image: './images/blog/common-beginner-mistakes.jpg',
+    image: '/images/blog/common-beginner-mistakes.jpg',
     title: '7 beginner gym mistakes I fix every single week',
     date: '2026-03-17',
     minutes: 6,
@@ -302,7 +302,7 @@ export const POSTS = [
   },
   {
     slug: 'online-coaching-vs-pt',
-    image: './images/blog/online-coaching-vs-pt.jpg',
+    image: '/images/blog/online-coaching-vs-pt.jpg',
     title: 'Online coaching vs in-person PT: which is right for you?',
     date: '2026-03-05',
     minutes: 6,
