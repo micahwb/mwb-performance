@@ -1,5 +1,6 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
 import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta, Everfit } from '../components.jsx'
 
 const Float = ({ className, delay, children }) => (
@@ -18,7 +19,15 @@ const Float = ({ className, delay, children }) => (
   </motion.div>
 )
 
+const GOALS = {
+  'Build muscle': { word: 'muscle.', lift: ['Goblet squat', '16 \u2192 24kg', '75%'], focus: 'Hypertrophy block \u00b7 3 days/wk' },
+  'Get stronger': { word: 'strength.', lift: ['Deadlift', '60 \u2192 85kg', '84%'], focus: 'Strength block \u00b7 3 days/wk' },
+  'Lose fat': { word: 'momentum.', lift: ['Bench press', '30 \u2192 42.5kg', '62%'], focus: 'Recomp block \u00b7 3 days/wk + steps' },
+}
+
 export default function Home() {
+  const [goal, setGoal] = useState('Build muscle')
+  const g = GOALS[goal]
   usePageMeta('MWB Performance — Online & In-Person Strength Coaching | Christchurch NZ', '1:1 strength coaching for beginners with Micah Barker — in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, daily DM support.')
   return (
     <>
@@ -29,14 +38,20 @@ export default function Home() {
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
               <span className="hero-badge"><span className="dot" />Now accepting new clients</span>
             </motion.div>
-            <motion.h1 aria-label="Strength for people starting out." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
-              {['Strength', 'for', 'people'].map(w => (
+            <div className="goal-tabs" role="tablist" aria-label="Pick your goal">
+              {Object.keys(GOALS).map(k => (
+                <button key={k} role="tab" aria-selected={goal === k} className={goal === k ? 'gt on' : 'gt'} onClick={() => setGoal(k)}>{k}</button>
+              ))}
+            </div>
+            <motion.h1 aria-label="Beginners leave here with muscle." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
+              {['Beginners', 'leave'].map(w => (
                 <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w} </motion.span>
               ))}
               <br />
-              {['starting', 'out.'].map(w => (
-                <motion.span key={w} className="hw accent" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w} </motion.span>
-              ))}
+              <motion.span className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6 } } }}>here with </motion.span>
+              <AnimatePresence mode="wait">
+                <motion.span key={goal} className="hw accent" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -18 }} transition={{ duration: 0.35, ease: 'easeOut' }}>{g.word}</motion.span>
+              </AnimatePresence>
             </motion.h1>
             <motion.p className="lead"
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
@@ -62,7 +77,7 @@ export default function Home() {
             </motion.div>
           </div>
 
-          <div className="collage" aria-hidden="true">
+          <div className="collage">
             <Float className="c-main" delay={0.2}>
               <img src="./images/gym_2.jpg" alt="" />
               <div className="fk">This week</div>
@@ -72,10 +87,10 @@ export default function Home() {
             </Float>
             <Float className="c-widget" delay={0.4}>
               <div className="fk">Block 1 · lifts moving</div>
-              <div className="mini"><span>Goblet squat</span><em>16 → 24kg</em><div className="mini-bar"><i style={{ width: '75%' }} /></div></div>
+              <div className="mini"><span>{g.lift[0]}</span><em>{g.lift[1]}</em><div className="mini-bar"><motion.i animate={{ width: g.lift[2] }} transition={{ duration: 0.7, ease: 'easeOut' }} style={{ display: 'block', height: '100%', background: 'var(--gold-fill)' }} /></div></div>
               <div className="mini"><span>Bench press</span><em>30 → 42.5kg</em><div className="mini-bar"><i style={{ width: '62%' }} /></div></div>
               <div className="mini"><span>Deadlift</span><em>60 → 85kg</em><div className="mini-bar"><i style={{ width: '84%' }} /></div></div>
-              <div className="fs" style={{ marginTop: 12 }}>Hypertrophy + strength · 3 days/wk</div>
+              <div className="fs" style={{ marginTop: 12 }}>{g.focus}</div>
             </Float>
             <Float className="c-dm" delay={0.6}>
               <div className="fk">DM support · today</div>
