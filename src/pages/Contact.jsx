@@ -58,8 +58,8 @@ export default function Contact() {
                 <label>Phone (optional)<input type="tel" name="phone" autoComplete="tel" /></label>
                 <label>Preferred coaching
                   <select name="mode" defaultValue="Not sure yet">
-                    <option>In-person (Christchurch)</option>
                     <option>Online coaching</option>
+                    <option>In-person waitlist (from September)</option>
                     <option>Not sure yet</option>
                   </select>
                 </label>
@@ -124,7 +124,7 @@ export default function Contact() {
           <Stagger className="grid-3">
             <Item className="cell"><span className="idx">24h</span><h3>I reply</h3><p>Personally, within 24 hours — usually faster. We lock in a call time that suits you.</p></Item>
             <Item className="cell"><span className="idx">Day 2–3</span><h3>Intro call</h3><p>20 relaxed minutes on Zoom or phone. Goals, history, honest recommendation.</p></Item>
-            <Item className="cell"><span className="idx">Day 5–7</span><h3>Program lands</h3><p>If we're a fit, your custom block arrives in the Everfit app and week one begins.</p></Item>
+            <Item className="cell"><span className="idx">Day 5–7</span><h3>Program lands</h3><p>If we're a fit, your custom block arrives in the Hevy app and week one begins.</p></Item>
           </Stagger>
         </div>
       </section>

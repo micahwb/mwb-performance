@@ -13,9 +13,9 @@ export default function Christchurch() {
           <Reveal><span className="label">Christchurch</span></Reveal>
           <Reveal><h1>Personal trainer in <span className="accent">Christchurch.</span></h1></Reveal>
           <Reveal><p className="sub" style={{ marginTop: 20 }}>
-            I'm Micah Barker — a Christchurch-based personal trainer who specialises in
-            getting beginners strong. Train 1:1 with me in the gym, or take the same
-            coaching fully online. Either way, it starts with a free intro call.
+            I'm Micah Barker — a Christchurch-based coach who specialises in getting
+            beginners strong. Right now I coach fully online; 1:1 in-person sessions
+            launch in September. Join the waitlist with a free intro call.
           </p></Reveal>
         </div>
       </section>
@@ -27,8 +27,8 @@ export default function Christchurch() {
           <Stagger className="grid-3">
             <Item className="cell">
               <span className="idx">01</span>
-              <h3>Local &amp; in person</h3>
-              <p>Real 1:1 sessions throughout Christchurch — hands-on technique coaching, immediate feedback, and a training plan built around your week, not a template.</p>
+              <h3>In-person from September</h3>
+              <p>1:1 sessions throughout Christchurch launch in September — the waitlist is open now, and online clients get first pick of session times.</p>
             </Item>
             <Item className="cell">
               <span className="idx">02</span>
@@ -37,8 +37,8 @@ export default function Christchurch() {
             </Item>
             <Item className="cell">
               <span className="idx">03</span>
-              <h3>Online when life moves</h3>
-              <p>Travelling, shift work, moving suburbs? Your program lives in the Everfit app, so coaching continues anywhere in NZ without missing a block.</p>
+              <h3>Online coaching, today</h3>
+              <p>Start now: custom program in the Hevy app, weekly check-ins and daily DM support — the full coaching experience from any Christchurch gym.</p>
             </Item>
           </Stagger>
         </div>
@@ -53,7 +53,7 @@ export default function Christchurch() {
             <div style={{ marginTop: 40 }}>
               <details>
                 <summary>Where in Christchurch do you train clients?</summary>
-                <div className="a">I train clients throughout Christchurch — we'll lock in the gym location and times that suit you best on your intro call. {/* [EDIT] name Micah's gym + suburbs served */}</div>
+                <div className="a">In-person sessions launch throughout Christchurch in September — the waitlist is open now. Until then, coaching is fully online and starts immediately. {/* [EDIT] name Micah's gym + suburbs served */}</div>
               </details>
               <details>
                 <summary>How much does a personal trainer in Christchurch cost?</summary>

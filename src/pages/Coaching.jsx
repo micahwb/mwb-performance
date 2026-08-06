@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Reveal, Stagger, Item, CtaBanner, Everfit, usePageMeta } from '../components.jsx'
+import { Reveal, Stagger, Item, CtaBanner, Hevy, usePageMeta } from '../components.jsx'
 
 export default function Coaching() {
     usePageMeta('Coaching — MWB Performance', '1:1 coaching with Micah Barker: in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, DM support. No lock-in.')
@@ -10,9 +10,9 @@ export default function Coaching() {
           <Reveal><span className="label">Coaching &amp; pricing</span></Reveal>
           <Reveal><h1>Everything you need to progress. <span className="accent">Nothing you don't.</span></h1></Reveal>
           <Reveal><p className="sub page-sub" style={{ marginTop: 20 }}>
-            1:1 coaching built around your pace and your life — train with me in person
-            in Christchurch, or fully online from any gym in New Zealand. Specialising in
-            resistance training for hypertrophy, strength and fat loss.
+            1:1 online coaching built around your pace and your life — from any gym in
+            New Zealand. For beginners building confidence and lifters who want
+            accountability. In-person Christchurch sessions launch this September.
           </p></Reveal>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function Coaching() {
             </Item>
           </Stagger>
           <Reveal>
-            <Everfit note="Your program lives in the Everfit coaching app — workouts, exercise videos and progress tracking, all in your pocket." />
+            <Hevy note="Your program lives in the Hevy app — workouts, exercise videos and progress tracking, all in your pocket." />
           </Reveal>
         </div>
       </section>
@@ -52,26 +52,26 @@ export default function Coaching() {
       {/* TWO WAYS — light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">Two ways to train</span></Reveal>
-          <Reveal><h2>In the gym with me,<br />or coached from anywhere.</h2></Reveal>
+          <Reveal><span className="label">How you can train</span></Reveal>
+          <Reveal><h2>Online now.<br />In the gym from September.</h2></Reveal>
           <Stagger className="grid-3" style={{ gridTemplateColumns: '1fr 1fr' }}>
             <Item className="cell">
               <div className="rule" />
-              <h3>In-person · Christchurch</h3>
-              <p>Train 1:1 with me in the gym — hands-on technique coaching, immediate feedback, sessions built around your goals. Ideal if you want someone right there for every rep.</p>
+              <h3>Online coaching · available now</h3>
+              <p>Your custom program in the Hevy app, weekly Zoom check-ins and DM support every day — full coaching at your own gym, on your schedule, anywhere in NZ.</p>
             </Item>
             <Item className="cell">
               <div className="rule" />
-              <h3>Online · NZ-wide</h3>
-              <p>Your custom program in the Everfit app, weekly Zoom check-ins and DM support every day. The same coaching brain, at your own gym, on your schedule.</p>
+              <h3>In-person · Christchurch, from September</h3>
+              <p>1:1 sessions in the gym are launching in September. Mention it on your intro call to join the waitlist — online clients get first pick of session times.</p>
             </Item>
           </Stagger>
           <Reveal>
             <div className="offer-card">
               <div className="offer-head">
                 <div>
-                  <div className="tier">1:1 Coaching — In-Person or Online</div>
-                  <p className="offer-sub">In person in Christchurch or online NZ-wide — fully personalised, month to month, no lock-in. Investment discussed on your free intro call, so the plan fits your goals before we ever talk numbers.</p>
+                  <div className="tier">1:1 Online Coaching</div>
+                  <p className="offer-sub">Fully personalised online coaching, month to month, no lock-in — anywhere in NZ. Investment discussed on your free intro call, so the plan fits your goals before we ever talk numbers.</p>
                 </div>
                 <Link className="btn" to="/contact">Book your free intro call</Link>
               </div>
@@ -85,7 +85,7 @@ export default function Coaching() {
                     <li>Form-check video reviews with same-day feedback</li>
                   </ul>
                   <ul>
-                    <li>Everfit coaching app — program, videos, logging</li>
+                    <li>Hevy app — program, videos, logging</li>
                     <li>Progress tracking: lifts, measurements, photos (opt-in)</li>
                     <li>Beginner-first technique coaching from day one</li>
                     <li>First-week guarantee + cancel anytime</li>
@@ -164,8 +164,8 @@ export default function Coaching() {
                 <div className="a">Yes — beginners are exactly who I coach. Every exercise comes with technique guidance, and you can send me form-check videos any time.</div>
               </details>
               <details>
-                <summary>Should I pick in-person or online?</summary>
-                <div className="a">In-person (Christchurch) suits you if you want hands-on technique coaching every session. Online suits you if you want flexibility at your own gym with the same programming, weekly check-ins and daily DM support. Plenty of clients start in person and move online once their confidence is built — we\u2019ll figure out the right fit on your call.</div>
+                <summary>Do you offer in-person training?</summary>
+                <div className="a">From September — I'm locking in a Christchurch gym contract now. Coaching is fully online until then, and current online clients get first pick of in-person session times when doors open. Ask about the waitlist on your intro call.</div>
               </details>
               <details>
                 <summary>How fast will I see results?</summary>

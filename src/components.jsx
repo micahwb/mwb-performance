@@ -170,12 +170,12 @@ export const Marquee = () => {
   )
 }
 
-/* ── Powered by Everfit badge ────────────────────────────────── */
-export const Everfit = ({ note }) => (
-  <div className="everfit">
+/* ── Powered by Hevy badge ────────────────────────────────── */
+export const Hevy = ({ note }) => (
+  <div className="hevy">
     <span className="pb">Powered by</span>
-    <a href="https://everfit.io" target="_blank" rel="noopener noreferrer" aria-label="Everfit coaching app">
-      <img src="/everfit-white.svg" alt="Everfit" height="22" loading="lazy" />
+    <a href="https://www.hevyapp.com" target="_blank" rel="noopener noreferrer" aria-label="Hevy app">
+      <img src="/hevy-badge.png" alt="Hevy" height="22" loading="lazy" />
     </a>
     {note && <span className="note">{note}</span>}
   </div>

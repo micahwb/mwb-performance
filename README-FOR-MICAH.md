@@ -53,13 +53,13 @@ Buy `mwbperformance.com` (~NZ$20/yr) → **Settings → Pages → Custom domain*
 - **Colours:** Black `#000000` · Warm off-white `#F2EEE4` · Bronze `#7B5D20` (with lighter gold `#C9A14B` for text accents on dark)
 - **Font:** Archivo (free, Google Fonts) — headlines 900 uppercase, body 400
 - **Logo (chosen):** the Speed-M lockup — live in the nav (`public/logo-lockup.png`), badge as favicon (`public/favicon.png`), source in `brand/2-speed-M-badge.png`. Other concepts kept in `brand/` and the logo rounds folders for merch/social.
-- **Programs app:** the site carries an official "Powered by Everfit" badge (Coaching page + footer) — logos in `public/everfit*.svg`.
+- **Programs app:** the site carries an official "Powered by Hevy" badge (Coaching page + footer) — logos in `public/hevy*.svg`.
 - **Rule:** black + off-white + ONE bronze accent. Sharp corners everywhere — never add border-radius.
 
 ## Legal pages & blog
 - `/privacy` and `/terms` are solid NZ-law templates (Privacy Act 2020 / Consumer Guarantees Act aware) — **have a lawyer glance over them once**, and fill the `[EDIT]` payment-provider line in Terms.
 - `/blog` has 4 articles written in your voice — edit freely in `src/posts.js`, and add new posts by copying the pattern.
-- Beyond the site: run a PAR-Q pre-exercise questionnaire in your Everfit onboarding (legal research says this is best practice for NZ PTs).
+- Beyond the site: run a PAR-Q pre-exercise questionnaire in your Hevy onboarding (legal research says this is best practice for NZ PTs).
 
 ## What's in this folder
 ```

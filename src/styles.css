@@ -36,7 +36,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-.btn, .cell, .fcard, .price-card, blockquote, details, input, select, textarea, .post-card, .post-card .post-art, .post-hero, .everfit, .phone, .wday, .jstep, .cred, .stat, .toast, .duotone, .duotone img, .fcard img, .hero-badge { border-radius: 4px; }
+.btn, .cell, .fcard, .price-card, blockquote, details, input, select, textarea, .post-card, .post-card .post-art, .post-hero, .hevy, .phone, .wday, .jstep, .cred, .stat, .toast, .duotone, .duotone img, .fcard img, .hero-badge { border-radius: 4px; }
 html { scroll-behavior: smooth; }
 body {
   background: var(--ink);
@@ -406,20 +406,20 @@ footer.site a:hover { color: var(--bone); }
 .light .price-card ul li::before { color: var(--gold-fill); }
 .sticky-cta { border-top-color: #000; }
 
-/* ── Everfit badge ──────────────────────────────────────────── */
-.everfit {
+/* ── Hevy badge ──────────────────────────────────────────── */
+.hevy {
   display: inline-flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-top: 40px;
   border: 1px solid var(--line); border-left: 4px solid var(--gold-fill);
   background: var(--ink-2); padding: 20px 26px;
 }
-.everfit .pb { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ember); }
-.everfit img { height: 30px; width: auto; display: block; }
-.everfit a { display: inline-flex; align-items: center; }
-.everfit a:hover img { opacity: 0.85; }
-.everfit .note { flex-basis: 100%; color: var(--grey-on-dark); font-size: 0.9rem; max-width: 560px; margin-top: 2px; }
-.foot-bottom .everfit { margin-top: 0; gap: 10px; border: 0; background: none; padding: 0; }
-.foot-bottom .everfit .pb { color: var(--grey-on-light); }
-.foot-bottom .everfit img { height: 16px; }
+.hevy .pb { font-size: 0.68rem; font-weight: 800; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ember); }
+.hevy img { height: 30px; width: auto; display: block; }
+.hevy a { display: inline-flex; align-items: center; }
+.hevy a:hover img { opacity: 0.85; }
+.hevy .note { flex-basis: 100%; color: var(--grey-on-dark); font-size: 0.9rem; max-width: 560px; margin-top: 2px; }
+.foot-bottom .hevy { margin-top: 0; gap: 10px; border: 0; background: none; padding: 0; }
+.foot-bottom .hevy .pb { color: var(--grey-on-light); }
+.foot-bottom .hevy img { height: 16px; }
 
 /* ── Blog ───────────────────────────────────────────────────── */
 .post-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -496,7 +496,7 @@ footer.site a:hover { color: var(--bone); }
 .ph-msg.coach { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--gold-fill); color: var(--bone); }
 .ph-msg.coach b { display: block; color: var(--ember); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 3px; }
 .ph-msg.you { background: var(--gold-fill); color: #F7F3E8; justify-self: end; font-weight: 700; }
-.app-section .everfit { margin-top: 26px; }
+.app-section .hevy { margin-top: 26px; }
 
 /* ── World-class pass: motion + new sections ────────────────── */
 .hw { display: inline-block; margin-right: 0.26em; }

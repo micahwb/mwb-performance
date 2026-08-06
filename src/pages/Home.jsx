@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
-import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta, Everfit } from '../components.jsx'
+import { Reveal, Stagger, Item, Marquee, CtaBanner, Count, usePageMeta, Hevy } from '../components.jsx'
 
 const Float = ({ className, delay, children }) => (
   <motion.div
@@ -56,9 +56,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
             >
-              1:1 coaching for beginners — in person in Christchurch or online anywhere in NZ.
-              Custom programs, weekly check-ins and a coach in your DMs. Build muscle,
-              gain strength, lose fat. No guesswork, no gym intimidation.
+              1:1 online coaching for beginners building confidence — and lifters who want
+              real accountability. Custom programs, weekly check-ins and a coach in your
+              DMs, anywhere in NZ. In-person Christchurch sessions launch this September.
             </motion.p>
             <motion.div className="goal-row" role="tablist" aria-label="Pick your goal"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
@@ -74,15 +74,15 @@ export default function Home() {
             >
               <Link className="btn xl" to="/contact">Book your free intro call →</Link>
               <Link className="hero-link" to="/coaching">Explore the coaching →</Link>
-              <span className="cta-note" style={{ flexBasis: '100%' }}>20 minutes · $0 · no pressure · in-person or online</span>
+              <span className="cta-note" style={{ flexBasis: '100%' }}>20 minutes · $0 · no pressure · fully online</span>
             </motion.div>
             <motion.div className="hero-meta"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4 }}
             >
               <span className="live"><i className="livedot" />Accepting clients</span>
               <span><b>L4</b> qualified</span>
-              <span><b>In-person</b> · CHCH</span>
               <span><b>Online</b> · NZ-wide</span>
+              <span><b>In-person</b> · Sept</span>
             </motion.div>
           </div>
 
@@ -92,8 +92,8 @@ export default function Home() {
               transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }} />
             <span className="side-mark" aria-hidden="true">MWB · PERFORMANCE</span>
             <div className="mode-chips">
-              <span>In the gym · Christchurch</span>
-              <span>In your pocket · NZ-wide</span>
+              <span>Online coaching · NZ-wide</span>
+              <span>In-person CHCH · September</span>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function Home() {
       <section className="light">
         <div className="wrap">
           <Reveal><span className="label">01 — Who this is for</span></Reveal>
-          <Reveal><h2>Built for people starting out —<br />not for gym veterans.</h2></Reveal>
+          <Reveal><h2>Built for beginners —<br />and lifters chasing consistency.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
               <img className="cell-ico" src="/icons/ico-door.png" alt="" />
@@ -119,8 +119,8 @@ export default function Home() {
             </Item>
             <Item className="cell">
               <img className="cell-ico" src="/icons/ico-target.png" alt="" />
-              <h3>"I want real results"</h3>
-              <p>Muscle, strength, fat loss, tone — you want a plan built for your goal, your equipment and your actual schedule.</p>
+              <h3>"I train, but I've stalled"</h3>
+              <p>You know the gym — but progress has flatlined. You want structured programming, honest accountability and numbers that move again.</p>
             </Item>
           </Stagger>
         </div>
@@ -159,7 +159,7 @@ export default function Home() {
             <Reveal><h2>Your whole program,<br />in your pocket.</h2></Reveal>
             <Reveal><p className="sub" style={{ margin: '18px 0 34px' }}>
               Every session, exercise video, logged set and coach conversation lives in the
-              Everfit app — so the plan is always with you, and so am I.
+              Hevy app — so the plan is always with you, and so am I.
             </p></Reveal>
             <Stagger className="app-feats">
               <Item className="feat"><img className="fico" src="/icons/ico-program.png" alt="" /><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
@@ -167,7 +167,7 @@ export default function Home() {
               <Item className="feat"><img className="fico" src="/icons/ico-video.png" alt="" /><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
               <Item className="feat"><img className="fico" src="/icons/ico-chat.png" alt="" /><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
             </Stagger>
-            <Reveal><Everfit /></Reveal>
+            <Reveal><Hevy /></Reveal>
           </div>
           <Reveal delay={0.15}>
             <div className="phone" aria-hidden="true">
