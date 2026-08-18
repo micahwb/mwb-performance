@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Reveal, Stagger, Item, CtaBanner, CONFIG, usePageMeta } from '../components.jsx'
 
 export default function Results() {
@@ -9,46 +10,24 @@ export default function Results() {
           <Reveal><span className="label">Client results</span></Reveal>
           <Reveal><h1>Real people. <span className="accent">Real progress.</span></h1></Reveal>
           <Reveal><p className="sub" style={{ marginTop: 20 }}>
-            No fake transformations, no rented physiques. Just beginners who showed up,
-            followed the plan, and got stronger.
+            No fake transformations, no rented physiques, no invented quotes. Here's how progress
+            actually gets measured — and what a realistic first 12 weeks looks like.
           </p></Reveal>
         </div>
       </section>
 
       <section>
         <div className="wrap">
-          <div className="quotes">
-            {/* [EDIT-QUOTES] Replace all example quotes with REAL client words (with permission).
-                Never launch with invented testimonials. Delete cards you don't need. */}
-            <Reveal>
-              <blockquote>
-                "Example — replace me: I'd never touched a barbell before. Twelve weeks in I'm
-                squatting bodyweight and I actually look forward to the gym."
-                <footer><b>Client name</b>Goal · Duration</footer>
-              </blockquote>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <blockquote>
-                "Example — replace me: The weekly check-ins kept me honest. Down 6kg and
-                stronger than I've ever been."
-                <footer><b>Client name</b>Goal · Duration</footer>
-              </blockquote>
-            </Reveal>
-            <Reveal delay={0.16}>
-              <blockquote>
-                "Example — replace me: Micah rebuilt my program around a dodgy knee. Strength
-                up every block, zero pain."
-                <footer><b>Client name</b>Goal · Duration</footer>
-              </blockquote>
-            </Reveal>
-            <Reveal delay={0.24}>
-              <blockquote>
-                "Example — replace me: As a total beginner I was terrified of the weights area.
-                Now it's my favourite part of the week."
-                <footer><b>Client name</b>Goal · Duration</footer>
-              </blockquote>
-            </Reveal>
-          </div>
+          <Reveal>
+            <div className="founding">
+              <span className="lb-kick">Building the wall</span>
+              <h3>Client stories go here — real ones only.</h3>
+              <p>I'd rather show you nothing than show you invented quotes or stock transformations.
+                 Results from my current clients get published here as they earn them. In the meantime,
+                 below is exactly how I measure progress and what you can realistically expect.</p>
+              <Link className="btn sm" to="/contact">Be one of the first →</Link>
+            </div>
+          </Reveal>
         </div>
       </section>
 

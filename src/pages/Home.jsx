@@ -170,19 +170,10 @@ export default function Home() {
             <Reveal><Hevy /></Reveal>
           </div>
           <Reveal delay={0.15}>
-            <div className="phone" aria-hidden="true">
-              <div className="ph-top"><i />MWB · Week 4 · Day 2</div>
-              <div className="ph-head">Lower body — strength</div>
-              <div className="ph-row done"><span>Goblet squat</span><span>3 × 8 · 24kg ✓</span></div>
-              <div className="ph-row done"><span>Romanian deadlift</span><span>3 × 10 · 40kg ✓</span></div>
-              <div className="ph-row"><span>Leg press</span><span>3 × 12 · 90kg</span></div>
-              <div className="ph-row"><span>Seated row</span><span>3 × 10 · 45kg</span></div>
-              <div className="ph-bar"><div className="ph-fill" /><span>Session 2 of 4 done</span></div>
-              <div className="ph-chat">
-                <div className="ph-msg coach"><b>Micah</b>Depth looks way better — add 2.5kg next session.</div>
-                <div className="ph-msg you">On it 💪</div>
-              </div>
-            </div>
+            <picture className="app-shot">
+              <source srcSet="/images/hevy-app.webp" type="image/webp" />
+              <img src="/images/hevy-app.png" alt="The Hevy app showing an MWB Performance workout — logged sets, rest timer, and coaching messages from Micah" loading="lazy" width="1100" height="1010" />
+            </picture>
           </Reveal>
         </div>
       </section>
@@ -201,41 +192,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROOF teaser — dark */}
-      <section>
-        <div className="wrap">
-          <Reveal><span className="label">05 — Client results</span></Reveal>
-          <Reveal><h2>Real people. Real progress.</h2></Reveal>
-          <div className="quotes">
-            {/* [EDIT-QUOTES] replace with real client quotes before launch */}
-            <Reveal>
-              <blockquote>
-                "Example — replace me: I'd never touched a barbell before. Twelve weeks in I'm
-                squatting bodyweight and I actually look forward to the gym."
-                <footer><b>Client name</b>Goal · Duration</footer>
-              </blockquote>
-            </Reveal>
-            <Reveal delay={0.1}>
-              <blockquote>
-                "Example — replace me: The weekly check-ins kept me honest. Down 6kg and
-                stronger than I've ever been."
-                <footer><b>Client name</b>Goal · Duration</footer>
-              </blockquote>
-            </Reveal>
-          </div>
-          <Reveal>
-            <p style={{ marginTop: 28 }}>
-              <Link className="btn ghost sm" to="/results">See all results →</Link>
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
       {/* RISK REVERSAL — light */}
       <section className="light">
         <div className="wrap guarantee">
           <div>
-            <Reveal><span className="label">06 — The MWB promise</span></Reveal>
+            <Reveal><span className="label">05 — The MWB promise</span></Reveal>
             <Reveal><h2>If you show up,<br />I make it work.</h2></Reveal>
           </div>
           <Stagger className="grid-3" >
