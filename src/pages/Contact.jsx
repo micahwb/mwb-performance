@@ -10,19 +10,31 @@ export default function Contact() {
     const form = e.currentTarget
     if (!form.reportValidity()) return
     const data = Object.fromEntries(new FormData(form).entries())
+    if (data._honey) return /* spam trap */
+    const mailtoFallback = () => {
+      const body = encodeURIComponent(
+        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nPreferred: ${data.mode}\nGoal: ${data.goal}\n\n${data.message || ''}`,
+      )
+      window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request — ' + data.name)}&body=${body}`
+      setStatus({ msg: `Opening your email app as backup… if nothing happens, email ${CONFIG.EMAIL}`, kind: 'ok' })
+    }
     if (CONFIG.FORM_ENDPOINT) {
       setStatus({ msg: 'Sending…', kind: '' })
       try {
         const r = await fetch(CONFIG.FORM_ENDPOINT, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify(data),
+          body: JSON.stringify({
+            ...data,
+            _subject: `MWB enquiry — ${data.name} (${data.goal})`,
+            _template: 'table',
+          }),
         })
         if (!r.ok) throw new Error(String(r.status))
         form.reset()
         setStatus({ msg: "Sent. I'll reach out within 24 hours.", kind: 'ok' })
       } catch {
-        setStatus({ msg: 'Something went wrong — DM @mwbcoaching or email me instead.', kind: 'err' })
+        mailtoFallback()
       }
     } else {
       const body = encodeURIComponent(
@@ -50,6 +62,7 @@ export default function Contact() {
         <div className="wrap split" style={{ alignItems: 'start' }}>
           <Reveal delay={0.1}>
             <form onSubmit={onSubmit} noValidate>
+              <input type="text" name="_honey" tabIndex="-1" autoComplete="off" style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true" />
               <div className="frow">
                 <label>Name *<input type="text" name="name" autoComplete="name" required /></label>
                 <label>Email *<input type="email" name="email" autoComplete="email" required /></label>

@@ -4,10 +4,11 @@ import { AnimatePresence, motion, useInView } from 'framer-motion'
 
 /* ── Config Micah edits ──────────────────────────────────────── */
 export const CONFIG = {
-  /* [EDIT-FORM] paste your Formspree endpoint, e.g. "https://formspree.io/f/abcdwxyz" */
-  FORM_ENDPOINT: '',
-  /* [EDIT-EMAIL] your real email */
-  EMAIL: 'hello@mwbperformance.com',
+  /* Enquiry webhook — FormSubmit AJAX, delivers straight to Micah's inbox.
+     NOTE: the very first real submission triggers a one-time activation email
+     to Micah (one click) — after that, every enquiry lands in his Gmail. */
+  FORM_ENDPOINT: 'https://formsubmit.co/ajax/micahbarker13@gmail.com',
+  EMAIL: 'micahbarker13@gmail.com',
   INSTAGRAM: 'https://www.instagram.com/mwbcoaching/',
   LINKEDIN: 'https://www.linkedin.com/in/micah-barker-4b527b338/',
 }

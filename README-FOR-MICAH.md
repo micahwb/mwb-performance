@@ -17,7 +17,7 @@ Search the `src/` folder for `[EDIT]`:
 
 | Tag | File | What to change |
 |---|---|---|
-| `[EDIT-EMAIL]` | `src/components.jsx` | Your real email in `CONFIG.EMAIL`. Check `hello@mwbperformance.com` actually exists first. |
+| `[EDIT-EMAIL]` | `src/components.jsx` | Your real email in `CONFIG.EMAIL`. Check `micahbarker13@gmail.com` actually exists first. |
 | `[EDIT-FORM]` | `src/components.jsx` | Formspree endpoint — see step 2. |
 | `[EDIT-PRICE]` | `src/pages/Coaching.jsx` | The $65/$79/$149 prices are **placeholders** — set your real ones. |
 | `[EDIT-QUOTES]` | `src/pages/Home.jsx` + `src/pages/Results.jsx` | Replace example testimonials with real client quotes (with permission). **Never launch with the examples.** |
