@@ -15,7 +15,7 @@ export default function About() {
         <div className="wrap split">
           <Reveal>
             <div className="duotone">
-              <img src="/images/gym_1.jpg" alt="Micah Barker with a client after a training session" />
+              <img src="/images/micah-client.jpg" alt="Micah Barker with a client after a training session" />
               <span className="tag">Micah Barker · Coach</span>
             </div>
           </Reveal>

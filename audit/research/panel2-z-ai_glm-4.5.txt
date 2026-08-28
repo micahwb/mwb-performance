@@ -1,5 +1,0 @@
-1.  **Readability vs. Style:** The "Archivo 900 uppercase" choice sacrifices usability for aesthetics. It is cognitively heavy and difficult to scan, alienating beginners who need clarity, not visual aggression.
-2.  **Tone Mismatch:** The brutalist, industrial aesthetic contradicts the beginner niche. It feels intimidating and exclusive rather than welcoming and supportive. You look like a dungeon, not a guide.
-3.  **Missing Risk Reversal:** Beginners are terrified of wasting money. A comparison table isn't enough; you need a bold money-back guarantee or free trial to lower the barrier to entry.
-4.  **Lack of Video:** With only two dark photos, the site feels cold and robotic. A lo-fi video introduction is non-negotiable to inject humanity and compensate for the missing "pro photography" feel.
-5.  **Style Over Substance:** "Float cards" and "hard shadows" add visual noise. If the value proposition isn't instantly intuitive, the motion design is just a distraction, not a feature.
