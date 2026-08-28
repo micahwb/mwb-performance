@@ -14,9 +14,8 @@ export default function About() {
       <section>
         <div className="wrap split">
           <Reveal>
-            {/* [EDIT] replace with a friendly, well-lit photo of Micah */}
             <div className="duotone">
-              <img src="/images/gym_1.jpg" alt="Micah Barker, MWB Performance coach" />
+              <img src="/images/gym_1.jpg" alt="Micah Barker with a client after a training session" />
               <span className="tag">Micah Barker · Coach</span>
             </div>
           </Reveal>

@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           <div className="hero-portrait">
-            <motion.img src="/images/gym_2.jpg" alt="Micah Barker — MWB Performance coach"
+            <motion.img src="/images/gym_2.jpg" alt="Micah Barker coaching a client through a cable exercise at the gym"
               initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }} />
             <span className="side-mark" aria-hidden="true">MWB · PERFORMANCE</span>
