@@ -6,9 +6,9 @@ import { AnimatePresence, motion, useInView } from 'framer-motion'
 export const CONFIG = {
   /* Enquiry webhook — FormSubmit AJAX, delivers straight to Micah's inbox.
      NOTE: the very first real submission triggers a one-time activation email
-     to Micah (one click) — after that, every enquiry lands in his Gmail. */
-  FORM_ENDPOINT: 'https://formsubmit.co/ajax/micahbarker13@gmail.com',
-  EMAIL: 'micahbarker13@gmail.com',
+     to this address (one click) — after that, every enquiry lands in that inbox. */
+  FORM_ENDPOINT: 'https://formsubmit.co/ajax/mwbperformance.nz@gmail.com',
+  EMAIL: 'mwbperformance.nz@gmail.com',
   INSTAGRAM: 'https://www.instagram.com/mwbcoaching/',
   LINKEDIN: 'https://www.linkedin.com/in/micah-barker-4b527b338/',
 }
