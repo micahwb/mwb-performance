@@ -31,6 +31,11 @@ export default function Contact() {
           }),
         })
         if (!r.ok) throw new Error(String(r.status))
+        /* FormSubmit answers 200 with success:"false" when the address isn't
+           activated yet (or the form is disabled). Without this check the
+           visitor sees "Sent." and the enquiry is silently lost. */
+        const out = await r.json().catch(() => null)
+        if (out && String(out.success) !== 'true') throw new Error(out.message || 'rejected')
         form.reset()
         setStatus({ msg: "Sent. I'll reach out within 24 hours.", kind: 'ok' })
       } catch {
