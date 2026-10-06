@@ -7,7 +7,7 @@ import NotFound from './NotFound.jsx'
 const fmt = (d) => new Date(d + 'T00:00:00').toLocaleDateString('en-NZ', { day: 'numeric', month: 'long', year: 'numeric' })
 
 export function Blog() {
-  usePageMeta('Blog — MWB Performance', 'Straight-talking strength training articles for beginners from coach Micah Barker: gym confidence, muscle-building timelines, programs that stick.')
+  usePageMeta('Blog - MWB Performance', 'Straight-talking strength training articles for beginners from coach Micah Barker: gym confidence, muscle-building timelines, programs that stick.')
   return (
     <>
       <section className="page-head">
@@ -25,7 +25,7 @@ export function Blog() {
             <Link className="local-banner" to="/personal-trainer-christchurch">
               <span className="lb-body">
                 <span className="lb-txt">Personal training in Christchurch</span>
-                <span className="lb-sub">Train with Micah in person — technique-first coaching for beginners.</span>
+                <span className="lb-sub">Train with Micah in person - technique-first coaching for beginners.</span>
               </span>
               <span className="lb-cta">Start here →</span>
             </Link>
@@ -45,7 +45,7 @@ export function Blog() {
           </div>
         </div>
       </section>
-      <CtaBanner title="Prefer it done for you?" sub="Free intro call — honest advice even if it's not me." />
+      <CtaBanner title="Prefer it done for you?" sub="Free intro call - honest advice even if it's not me." />
     </>
   )
 }
@@ -67,7 +67,7 @@ export function Post() {
   const { slug } = useParams()
   const post = POSTS.find(p => p.slug === slug)
   usePageMeta(
-    post ? `${post.title} — MWB Performance` : 'Article not found — MWB Performance',
+    post ? `${post.title} - MWB Performance` : 'Article not found - MWB Performance',
     post ? post.excerpt : ''
   )
   if (!post) return <NotFound />

@@ -1,7 +1,7 @@
 import { Reveal, Stagger, Item, CtaBanner, usePageMeta } from '../components.jsx'
 
 export default function About() {
-    usePageMeta('About Micah Barker — MWB Performance', 'Meet Micah Barker: Christchurch-based L4 personal trainer specialising in beginner resistance training for hypertrophy, strength and fat loss.')
+    usePageMeta('About Micah Barker - MWB Performance', 'Meet Micah Barker: Christchurch-based L4 personal trainer specialising in beginner resistance training for hypertrophy, strength and fat loss.')
   return (
     <>
       <section className="page-head">
@@ -31,21 +31,20 @@ export default function About() {
               <p className="sub" style={{ marginBottom: 18 }}>
                 I hold my NZ Certificate in Health &amp; Fitness (Personal Trainer, Level&nbsp;4)
                 and I'm currently completing my Advanced Health &amp; Fitness Coach (Level&nbsp;5).
-                Everything I coach is built on proper education and real-world results — not guesswork.
+                Everything I coach is built on proper education and real-world results - not guesswork.
               </p>
             </Reveal>
             <Reveal delay={0.16}>
               <p className="sub">
-                Coaching is 1:1 and fully online — at your own gym, anywhere in NZ, with
-                the accountability and guidance you need to actually progress. In-person
-                Christchurch sessions launch this September.
+                Coaching is 1:1 and fully online - at your own gym, anywhere in NZ, with
+                the accountability and guidance you need to actually progress.
               </p>
             </Reveal>
             <Reveal delay={0.2}>
               <div className="creds">
-                <div className="cred"><b>Level 4</b><span>NZ Cert. Health &amp; Fitness — Personal Trainer</span></div>
-                <div className="cred"><b>Level 5</b><span>Advanced H&amp;F Coach — in progress</span></div>
-                <div className="cred"><b>1:1 only</b><span>Online NZ-wide · in-person Sept</span></div>
+                <div className="cred"><b>Level 4</b><span>NZ Cert. Health &amp; Fitness - Personal Trainer</span></div>
+                <div className="cred"><b>Level 5</b><span>Advanced H&amp;F Coach - in progress</span></div>
+                <div className="cred"><b>1:1 only</b><span>Online NZ-wide · in-person Christchurch</span></div>
                 <div className="cred"><b>CHCH</b><span>Based in Christchurch, NZ</span></div>
               </div>
             </Reveal>
@@ -53,30 +52,30 @@ export default function About() {
         </div>
       </section>
 
-      {/* JOURNEY — dark */}
+      {/* JOURNEY - dark */}
       <section style={{ paddingTop: 0 }}>
         <div className="wrap">
           <Reveal><span className="label">The path here</span></Reveal>
           <Stagger className="journey">
-            <Item className="jstep"><img className="jico" src="/icons/j1-first-rep.png" alt="" /><b>The first rep</b><p>Started as the beginner I now coach — unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
-            <Item className="jstep"><img className="jico" src="/icons/j2-qualified.png" alt="" /><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) — the foundation done properly: anatomy, programming, safe progression.</p></Item>
-            <Item className="jstep"><img className="jico" src="/icons/j3-studying.png" alt="" /><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach — because "qualified" is a starting line, not a finish line.</p></Item>
-            <Item className="jstep hot"><img className="jico" src="/icons/j4-summit.png" alt="" /><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners — the coach I needed on day one.</p></Item>
+            <Item className="jstep"><img className="jico" src="/icons/j1-first-rep.png" alt="" /><b>The first rep</b><p>Started as the beginner I now coach - unsure, self-taught, learning the hard way what good guidance would have shortcut.</p></Item>
+            <Item className="jstep"><img className="jico" src="/icons/j2-qualified.png" alt="" /><b>Level 4 qualified</b><p>NZ Certificate in Health &amp; Fitness (Personal Trainer) - the foundation done properly: anatomy, programming, safe progression.</p></Item>
+            <Item className="jstep"><img className="jico" src="/icons/j3-studying.png" alt="" /><b>Level 5 in progress</b><p>Advanced Health &amp; Fitness Coach - because "qualified" is a starting line, not a finish line.</p></Item>
+            <Item className="jstep hot"><img className="jico" src="/icons/j4-summit.png" alt="" /><b>MWB Performance</b><p>1:1 online coaching built specifically for beginners - the coach I needed on day one.</p></Item>
           </Stagger>
         </div>
       </section>
 
-      {/* PULL QUOTE — dark editorial moment */}
+      {/* PULL QUOTE - dark editorial moment */}
       <section className="pull-quote">
         <div className="wrap">
           <Reveal>
-            <p className="pq">"Nobody is born confident in a gym.<br /><span className="accent">Confidence is a rep you practise</span> — and my job is to count them with you."</p>
-            <p className="pq-by">— Micah Barker, MWB Performance</p>
+            <p className="pq">"Nobody is born confident in a gym.<br /><span className="accent">Confidence is a rep you practise</span> - and my job is to count them with you."</p>
+            <p className="pq-by">- Micah Barker, MWB Performance</p>
           </Reveal>
         </div>
       </section>
 
-      {/* PHILOSOPHY — light */}
+      {/* PHILOSOPHY - light */}
       <section className="light">
         <div className="wrap">
           <Reveal><span className="label">Coaching philosophy</span></Reveal>
@@ -95,13 +94,13 @@ export default function About() {
             <Reveal delay={0.16} className="cell">
               <div className="rule" />
               <h3>Life-proof plans</h3>
-              <p>Your program bends around your week — shift work, kids, travel — so training never falls over.</p>
+              <p>Your program bends around your week - shift work, kids, travel - so training never falls over.</p>
             </Reveal>
           </div>
         </div>
       </section>
 
-      <CtaBanner title="Train with me." sub="Tell me your goal — I'll tell you honestly if I can help." />
+      <CtaBanner title="Train with me." sub="Tell me your goal - I'll tell you honestly if I can help." />
     </>
   )
 }

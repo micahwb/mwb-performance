@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Reveal, CONFIG, usePageMeta, Stagger, Item } from '../components.jsx'
 
 export default function Contact() {
-  usePageMeta('Book Your Free Intro Call — MWB Performance', "Book a free, no-pressure 20-minute intro call with coach Micah Barker. Tell me your goals and I'll reply within 24 hours.")
+  usePageMeta('Book Your Free Intro Call - MWB Performance', "Book a free, no-pressure 20-minute intro call with coach Micah Barker. Tell me your goals and I'll reply within 24 hours.")
   const [status, setStatus] = useState({ msg: '', kind: '' })
 
   const onSubmit = async (e) => {
@@ -15,7 +15,7 @@ export default function Contact() {
       const body = encodeURIComponent(
         `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nPreferred: ${data.mode}\nGoal: ${data.goal}\n\n${data.message || ''}`,
       )
-      window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request — ' + data.name)}&body=${body}`
+      window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request - ' + data.name)}&body=${body}`
       setStatus({ msg: `Opening your email app as backup… if nothing happens, email ${CONFIG.EMAIL}`, kind: 'ok' })
     }
     if (CONFIG.FORM_ENDPOINT) {
@@ -26,7 +26,7 @@ export default function Contact() {
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
           body: JSON.stringify({
             ...data,
-            _subject: `MWB enquiry — ${data.name} (${data.goal})`,
+            _subject: `MWB enquiry - ${data.name} (${data.goal})`,
             _template: 'table',
           }),
         })
@@ -45,7 +45,7 @@ export default function Contact() {
       const body = encodeURIComponent(
         `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nGoal: ${data.goal}\n\n${data.message || ''}`,
       )
-      window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request — ' + data.name)}&body=${body}`
+      window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request - ' + data.name)}&body=${body}`
       setStatus({ msg: `Opening your email app… if nothing happens, email ${CONFIG.EMAIL}`, kind: 'ok' })
     }
   }
@@ -77,7 +77,7 @@ export default function Contact() {
                 <label>Preferred coaching
                   <select name="mode" defaultValue="Not sure yet">
                     <option>Online coaching</option>
-                    <option>In-person waitlist (from September)</option>
+                    <option>In-person waitlist</option>
                     <option>Not sure yet</option>
                   </select>
                 </label>
@@ -95,7 +95,7 @@ export default function Contact() {
                 </label>
               </div>
               <label>Anything else I should know?
-                <textarea name="message" placeholder="Experience, injuries, schedule — whatever's useful" />
+                <textarea name="message" placeholder="Experience, injuries, schedule - whatever's useful" />
               </label>
               <button className="btn" type="submit">Request my free intro call</button>
               <p className={`form-status ${status.kind}`} role="status" aria-live="polite">{status.msg}</p>
@@ -108,7 +108,7 @@ export default function Contact() {
                 <div className="cell">
                   <span className="idx">01</span>
                   <h3>20 minutes</h3>
-                  <p>A relaxed call to understand your goals — where you are, where you want to go.</p>
+                  <p>A relaxed call to understand your goals - where you are, where you want to go.</p>
                 </div>
                 <div className="cell">
                   <span className="idx">02</span>
@@ -134,13 +134,13 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      {/* AFTER YOU SUBMIT — light */}
+      {/* AFTER YOU SUBMIT - light */}
       <section className="light">
         <div className="wrap">
           <Reveal><span className="label">What happens next</span></Reveal>
           <Reveal><h2>From message to first session<br />in under a week.</h2></Reveal>
           <Stagger className="grid-3">
-            <Item className="cell"><span className="idx">24h</span><h3>I reply</h3><p>Personally, within 24 hours — usually faster. We lock in a call time that suits you.</p></Item>
+            <Item className="cell"><span className="idx">24h</span><h3>I reply</h3><p>Personally, within 24 hours - usually faster. We lock in a call time that suits you.</p></Item>
             <Item className="cell"><span className="idx">Day 2–3</span><h3>Intro call</h3><p>20 relaxed minutes on Zoom or phone. Goals, history, honest recommendation.</p></Item>
             <Item className="cell"><span className="idx">Day 5–7</span><h3>Program lands</h3><p>If we're a fit, your custom block arrives in the Hevy app and week one begins.</p></Item>
           </Stagger>

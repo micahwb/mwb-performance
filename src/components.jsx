@@ -4,9 +4,9 @@ import { AnimatePresence, motion, useInView } from 'framer-motion'
 
 /* ── Config Micah edits ──────────────────────────────────────── */
 export const CONFIG = {
-  /* Enquiry webhook — FormSubmit AJAX, delivers straight to Micah's inbox.
+  /* Enquiry webhook - FormSubmit AJAX, delivers straight to Micah's inbox.
      NOTE: the very first real submission triggers a one-time activation email
-     to this address (one click) — after that, every enquiry lands in that inbox. */
+     to this address (one click) - after that, every enquiry lands in that inbox. */
   FORM_ENDPOINT: 'https://formsubmit.co/ajax/mwbperformance.nz@gmail.com',
   EMAIL: 'mwbperformance.nz@gmail.com',
   INSTAGRAM: 'https://www.instagram.com/mwbcoaching/',
@@ -107,7 +107,7 @@ export const Nav = () => {
     <>
       <div className="nav-shell">
         <div className="wrap nav">
-          <Link className="logo" to="/" aria-label="MWB Performance — home">
+          <Link className="logo" to="/" aria-label="MWB Performance - home">
             <img className="lockup" src="/logo-lockup.png" alt="MWB Performance" />
           </Link>
           <ul className="nav-links">
@@ -119,7 +119,7 @@ export const Nav = () => {
               </li>
             ))}
             <li>
-              <a className="ig-link" href={CONFIG.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="MWB on Instagram — @mwbcoaching">
+              <a className="ig-link" href={CONFIG.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="MWB on Instagram - @mwbcoaching">
                 <InstaIcon />
               </a>
             </li>
@@ -150,7 +150,7 @@ export const Nav = () => {
                 {l.label}
               </NavLink>
             ))}
-            <a className="ig-link big" href={CONFIG.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="MWB on Instagram — @mwbcoaching">
+            <a className="ig-link big" href={CONFIG.INSTAGRAM} target="_blank" rel="noopener noreferrer" aria-label="MWB on Instagram - @mwbcoaching">
               <InstaIcon size={30} />
             </a>
           </motion.nav>
@@ -205,7 +205,7 @@ export const Footer = () => (
             <img className="lockup" src="/logo-lockup.png" alt="MWB Performance" />
           </Link>
           <p style={{ marginTop: 18, maxWidth: 380 }}>
-            1:1 strength coaching that meets you where you are — in person in Christchurch
+            1:1 strength coaching that meets you where you are - in person in Christchurch
             or online NZ-wide. Custom programs, weekly check-ins, real accountability.
           </p>
         </div>

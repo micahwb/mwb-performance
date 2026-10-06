@@ -3,8 +3,8 @@ import { Reveal, Stagger, Item, CtaBanner, usePageMeta, CONFIG } from '../compon
 
 export default function Christchurch() {
   usePageMeta(
-    'Personal Trainer Christchurch — MWB Performance | Micah Barker',
-    'Looking for a personal trainer in Christchurch? Micah Barker coaches beginners 1:1 — in the gym or online. Free intro call, no lock-in contracts.'
+    'Personal Trainer Christchurch - MWB Performance | Micah Barker',
+    'Looking for a personal trainer in Christchurch? Micah Barker coaches beginners 1:1 - in the gym or online. Free intro call, no lock-in contracts.'
   )
   return (
     <>
@@ -13,9 +13,8 @@ export default function Christchurch() {
           <Reveal><span className="label">Christchurch</span></Reveal>
           <Reveal><h1>Personal trainer in <span className="accent">Christchurch.</span></h1></Reveal>
           <Reveal><p className="sub" style={{ marginTop: 20 }}>
-            I'm Micah Barker — a Christchurch-based coach who specialises in getting
-            beginners strong. Right now I coach fully online; 1:1 in-person sessions
-            launch in September. Join the waitlist with a free intro call.
+            I'm Micah Barker - a Christchurch-based coach who specialises in getting
+            beginners strong. Right now I coach fully online, with in-person sessions coming to Christchurch soon. Join the waitlist with a free intro call.
           </p></Reveal>
         </div>
       </section>
@@ -23,12 +22,12 @@ export default function Christchurch() {
       <section>
         <div className="wrap">
           <Reveal><span className="label">Why train with me</span></Reveal>
-          <Reveal><h2>Built for Christchurch beginners —<br />not bodybuilders.</h2></Reveal>
+          <Reveal><h2>Built for Christchurch beginners -<br />not bodybuilders.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
               <span className="idx">01</span>
-              <h3>In-person from September</h3>
-              <p>1:1 sessions throughout Christchurch launch in September — the waitlist is open now, and online clients get first pick of session times.</p>
+              <h3>In-person, coming soon</h3>
+              <p>1:1 sessions throughout Christchurch are coming soon - the waitlist is open now, and online clients get first pick of session times.</p>
             </Item>
             <Item className="cell">
               <span className="idx">02</span>
@@ -38,13 +37,13 @@ export default function Christchurch() {
             <Item className="cell">
               <span className="idx">03</span>
               <h3>Online coaching, today</h3>
-              <p>Start now: custom program in the Hevy app, weekly check-ins and daily DM support — the full coaching experience from any Christchurch gym.</p>
+              <p>Start now: custom program in the Hevy app, weekly check-ins and daily DM support - the full coaching experience from any Christchurch gym.</p>
             </Item>
           </Stagger>
         </div>
       </section>
 
-      {/* LOCAL FAQ — light */}
+      {/* LOCAL FAQ - light */}
       <section className="light">
         <div className="wrap" style={{ maxWidth: 820 }}>
           <Reveal><span className="label">Christchurch FAQ</span></Reveal>
@@ -53,11 +52,11 @@ export default function Christchurch() {
             <div style={{ marginTop: 40 }}>
               <details>
                 <summary>Where in Christchurch do you train clients?</summary>
-                <div className="a">In-person sessions launch throughout Christchurch in September — the waitlist is open now. Until then, coaching is fully online and starts immediately. {/* [EDIT] name Micah's gym + suburbs served */}</div>
+                <div className="a">In-person sessions are coming to Christchurch soon - the waitlist is open now. Until then, coaching is fully online and starts immediately. {/* [EDIT] name Micah's gym + suburbs served */}</div>
               </details>
               <details>
                 <summary>How much does a personal trainer in Christchurch cost?</summary>
-                <div className="a">Rates in Christchurch typically run $60–$120 per session. My coaching is priced on your goals and format (in-person or online) — we'll talk numbers on your free intro call, and there are no lock-in contracts either way.</div>
+                <div className="a">Rates in Christchurch typically run $60–$120 per session. My coaching is priced on your goals and format (in-person or online) - we'll talk numbers on your free intro call, and there are no lock-in contracts either way.</div>
               </details>
               <details>
                 <summary>Do you only train beginners?</summary>
@@ -65,7 +64,7 @@ export default function Christchurch() {
               </details>
               <details>
                 <summary>Can I mix in-person and online coaching?</summary>
-                <div className="a">Yes — plenty of clients start in person to build technique and confidence, then move online once they're comfortable. The program follows you either way.</div>
+                <div className="a">Yes - plenty of clients start in person to build technique and confidence, then move online once they're comfortable. The program follows you either way.</div>
               </details>
             </div>
           </Reveal>
@@ -88,7 +87,7 @@ export default function Christchurch() {
         </div>
       </section>
 
-      <CtaBanner title="Train with a Christchurch coach." sub="Free 20-minute intro call — in person or online." />
+      <CtaBanner title="Train with a Christchurch coach." sub="Free 20-minute intro call - in person or online." />
     </>
   )
 }

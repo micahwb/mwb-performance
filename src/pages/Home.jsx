@@ -32,7 +32,7 @@ export default function Home() {
     return () => clearInterval(t)
   }, [])
   const pickGoal = (k) => { paused.current = true; setGoal(k) }
-  usePageMeta('MWB Performance — Online & In-Person Strength Coaching | Christchurch NZ', '1:1 strength coaching for beginners with Micah Barker — in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, daily DM support.')
+  usePageMeta('MWB Performance - Online & In-Person Strength Coaching | Christchurch NZ', '1:1 strength coaching for beginners with Micah Barker - in person in Christchurch or online NZ-wide. Custom programs, weekly check-ins, daily DM support.')
   return (
     <>
       {/* HERO */}
@@ -43,7 +43,7 @@ export default function Home() {
               Strength coaching · Christchurch &amp; online NZ
             </motion.p>
             <motion.h1 aria-label="Walk in a beginner. Leave with muscle." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
-              {['run', 'in', 'a', 'beginner.'].map(w => (
+              {['walk', 'in', 'a', 'beginner.'].map(w => (
                 <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w}{'\u00A0'}</motion.span>
               ))}
               <br />
@@ -56,14 +56,14 @@ export default function Home() {
               initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
             >
-              1:1 online coaching for beginners building confidence — and lifters who want
+              1:1 online coaching for beginners building confidence - and lifters who want
               real accountability. Custom programs, weekly check-ins and a coach in your
-              DMs, anywhere in NZ. In-person Christchurch sessions launch this September.
+              DMs, anywhere in NZ.
             </motion.p>
             <motion.div className="goal-row" role="tablist" aria-label="Pick your goal"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3 }}
             >
-              <span className="goal-lbl">Your goal —</span>
+              <span className="goal-lbl">Your goal -</span>
               {Object.keys(GOALS).map(k => (
                 <button key={k} role="tab" aria-selected={goal === k} className={goal === k ? 'gl on' : 'gl'} onClick={() => pickGoal(k)}>{k}</button>
               ))}
@@ -82,7 +82,7 @@ export default function Home() {
               <span className="live"><i className="livedot" />Accepting clients</span>
               <span><b>L4</b> qualified</span>
               <span><b>Online</b> · NZ-wide</span>
-              <span><b>In-person</b> · Sept</span>
+              <span><b>In-person</b> · Christchurch</span>
             </motion.div>
           </div>
 
@@ -93,7 +93,7 @@ export default function Home() {
             <span className="side-mark" aria-hidden="true">MWB · PERFORMANCE</span>
             <div className="mode-chips">
               <span>Online coaching · NZ-wide</span>
-              <span>In-person CHCH · September</span>
+              <span>In-person · Christchurch</span>
             </div>
           </div>
         </div>
@@ -101,11 +101,11 @@ export default function Home() {
 
       <Marquee />
 
-      {/* WHO IT'S FOR — light */}
+      {/* WHO IT'S FOR - light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">01 — Who this is for</span></Reveal>
-          <Reveal><h2>Built for beginners —<br />and lifters chasing consistency.</h2></Reveal>
+          <Reveal><span className="label">01 - Who this is for</span></Reveal>
+          <Reveal><h2>Built for beginners,<br />and lifters chasing consistency.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
               <img className="cell-ico" src="/icons/ico-door.png" alt="" />
@@ -120,27 +120,27 @@ export default function Home() {
             <Item className="cell">
               <img className="cell-ico" src="/icons/ico-target.png" alt="" />
               <h3>"I train, but I've stalled"</h3>
-              <p>You know the gym — but progress has flatlined. You want structured programming, honest accountability and numbers that move again.</p>
+              <p>You know the gym - but progress has flatlined. You want structured programming, honest accountability and numbers that move again.</p>
             </Item>
           </Stagger>
         </div>
       </section>
 
-      {/* HOW IT WORKS — dark */}
+      {/* HOW IT WORKS - dark */}
       <section>
         <div className="wrap">
-          <Reveal><span className="label">02 — How it works</span></Reveal>
+          <Reveal><span className="label">02 - How it works</span></Reveal>
           <Reveal><h2>Three steps between you<br />and your first program.</h2></Reveal>
           <Stagger className="grid-3">
             <Item className="cell">
               <span className="idx">01</span>
               <h3>Free intro call</h3>
-              <p>A relaxed 20-minute chat about your goals, experience and schedule. An honest recommendation — even if it's not me.</p>
+              <p>A 20-minute chat to assess your goals, experience and schedule with recommendations from me.</p>
             </Item>
             <Item className="cell">
               <span className="idx">02</span>
               <h3>Your custom program</h3>
-              <p>Built around your goal, your equipment and your week — with technique guidance on every single exercise.</p>
+              <p>Built around your goal, your equipment and your week - with technique guidance on every single exercise.</p>
             </Item>
             <Item className="cell">
               <span className="idx">03</span>
@@ -151,19 +151,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* COACHING APP — dark */}
+      {/* COACHING APP - dark */}
       <section className="app-section">
         <div className="wrap app-grid">
           <div>
-            <Reveal><span className="label">03 — Your coaching app</span></Reveal>
+            <Reveal><span className="label">03 - Your coaching app</span></Reveal>
             <Reveal><h2>Your whole program,<br />in your pocket.</h2></Reveal>
             <Reveal><p className="sub" style={{ margin: '18px 0 34px' }}>
               Every session, exercise video, logged set and coach conversation lives in the
-              Hevy app — so the plan is always with you, and so am I.
+              Hevy app - so the plan is always with you, and so am I.
             </p></Reveal>
             <Stagger className="app-feats">
               <Item className="feat"><img className="fico" src="/icons/ico-program.png" alt="" /><b>Full program + video demos</b><span>Every exercise has a technique video. No guessing on the gym floor.</span></Item>
-              <Item className="feat"><img className="fico" src="/icons/ico-log.png" alt="" /><b>Log every set</b><span>Weights, reps and PBs tracked — progress you can actually see.</span></Item>
+              <Item className="feat"><img className="fico" src="/icons/ico-log.png" alt="" /><b>Log every set</b><span>Weights, reps and PBs tracked - progress you can actually see.</span></Item>
               <Item className="feat"><img className="fico" src="/icons/ico-video.png" alt="" /><b>Check-in notes</b><span>Weekly reviews written into your plan, so nothing gets lost.</span></Item>
               <Item className="feat"><img className="fico" src="/icons/ico-chat.png" alt="" /><b>Coach chat</b><span>Questions and form checks straight to me, inside the app.</span></Item>
             </Stagger>
@@ -172,38 +172,38 @@ export default function Home() {
           <Reveal delay={0.15}>
             <picture className="app-shot">
               <source srcSet="/images/hevy-app.webp" type="image/webp" />
-              <img src="/images/hevy-app.png" alt="The Hevy app showing an MWB Performance workout — logged sets, rest timer, and coaching messages from Micah" loading="lazy" width="1100" height="1010" />
+              <img src="/images/hevy-app.png" alt="The Hevy app showing an MWB Performance workout - logged sets, rest timer, and coaching messages from Micah" loading="lazy" width="1100" height="1010" />
             </picture>
           </Reveal>
         </div>
       </section>
 
-      {/* STATS — light */}
+      {/* STATS - light */}
       <section className="light">
         <div className="wrap">
-          <Reveal><span className="label">04 — The standard</span></Reveal>
+          <Reveal><span className="label">04 - The standard</span></Reveal>
           <Reveal><h2>Coaching, measured.</h2></Reveal>
           <div className="stats">
-            <Reveal className="stat"><div className="n"><Count to={1} />:<em>1</em></div><div className="t">Coaching only — never group templates</div></Reveal>
-            <Reveal delay={0.08} className="stat"><div className="n"><Count to={7} /><em>d</em></div><div className="t">Coach contact — DMs open every day</div></Reveal>
+            <Reveal className="stat"><div className="n"><Count to={1} />:<em>1</em></div><div className="t">Coaching only - never group templates</div></Reveal>
+            <Reveal delay={0.08} className="stat"><div className="n"><Count to={7} /><em>d</em></div><div className="t">Coach contact - DMs open every day</div></Reveal>
             <Reveal delay={0.16} className="stat"><div className="n"><Count to={52} /><em>×</em></div><div className="t">Check-ins per year on Zoom</div></Reveal>
             <Reveal delay={0.24} className="stat"><div className="n"><em>$</em><Count to={0} /></div><div className="t">Cost of your first intro call</div></Reveal>
           </div>
         </div>
       </section>
 
-      {/* RISK REVERSAL — light */}
+      {/* RISK REVERSAL - light */}
       <section className="light">
         <div className="wrap guarantee">
           <div>
-            <Reveal><span className="label">05 — The MWB promise</span></Reveal>
+            <Reveal><span className="label">05 - The MWB promise</span></Reveal>
             <Reveal><h2>If you show up,<br />I make it work.</h2></Reveal>
           </div>
           <Stagger className="grid-3" >
             <Item className="cell">
               <div className="rule" />
               <h3>Free intro call</h3>
-              <p>20 minutes, zero pressure — and an honest recommendation even if it's not me.</p>
+              <p>20 minutes, zero pressure - and an honest recommendation even if it's not me.</p>
             </Item>
             <Item className="cell">
               <div className="rule" />
@@ -220,7 +220,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FREE GUIDE strip — dark */}
+      {/* FREE GUIDE strip - dark */}
       <section className="guide-strip">
         <div className="wrap cta-inner">
           <div>
