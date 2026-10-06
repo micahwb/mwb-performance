@@ -43,7 +43,7 @@ export default function Home() {
               Strength coaching · Christchurch &amp; online NZ
             </motion.p>
             <motion.h1 aria-label="Walk in a beginner. Leave with muscle." initial="off" animate="on" transition={{ staggerChildren: 0.09, delayChildren: 0.05 }}>
-              {['Walk', 'in', 'a', 'beginner.'].map(w => (
+              {['run', 'in', 'a', 'beginner.'].map(w => (
                 <motion.span key={w} className="hw" variants={{ off: { opacity: 0, y: 34 }, on: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } } }}>{w}{'\u00A0'}</motion.span>
               ))}
               <br />
