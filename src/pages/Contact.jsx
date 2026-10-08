@@ -118,7 +118,7 @@ export default function Contact() {
                 <div className="cell">
                   <span className="idx">03</span>
                   <h3>Zero pressure</h3>
-                  <p>No obligation to sign up for anything. Worst case, you leave with a clearer plan.</p>
+                  <p>No pressure, No commitments, just an honest conversation about your goals and a clear, personalised direction for moving forward.</p>
                 </div>
               </div>
             </Reveal>
