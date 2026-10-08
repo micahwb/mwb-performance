@@ -113,7 +113,7 @@ export default function Contact() {
                 <div className="cell">
                   <span className="idx">02</span>
                   <h3>Honest answer</h3>
-                  <p>An honest recommendation, even if it's not me. No scripts, no hard sell.</p>
+                  <p>Straightforward, professional advice designed around your goals, needs, and long-term progress.</p>
                 </div>
                 <div className="cell">
                   <span className="idx">03</span>
