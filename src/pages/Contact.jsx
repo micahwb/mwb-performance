@@ -13,7 +13,7 @@ export default function Contact() {
     if (data._honey) return /* spam trap */
     const mailtoFallback = () => {
       const body = encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nPreferred: ${data.mode}\nGoal: ${data.goal}\n\n${data.message || ''}`,
+        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nPreferred: ${data.mode}\nGoal: ${data.goal}\nExperience: ${data.experience}\nPreferred training times: ${data.times}\n\n${data.message || ''}`,
       )
       window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request - ' + data.name)}&body=${body}`
       setStatus({ msg: `Opening your email app as backup… if nothing happens, email ${CONFIG.EMAIL}`, kind: 'ok' })
@@ -43,7 +43,7 @@ export default function Contact() {
       }
     } else {
       const body = encodeURIComponent(
-        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nGoal: ${data.goal}\n\n${data.message || ''}`,
+        `Name: ${data.name}\nEmail: ${data.email}\nPhone: ${data.phone || '-'}\nPreferred: ${data.mode}\nGoal: ${data.goal}\nExperience: ${data.experience}\nPreferred training times: ${data.times}\n\n${data.message || ''}`,
       )
       window.location.href = `mailto:${CONFIG.EMAIL}?subject=${encodeURIComponent('Free intro call request - ' + data.name)}&body=${body}`
       setStatus({ msg: `Opening your email app… if nothing happens, email ${CONFIG.EMAIL}`, kind: 'ok' })
@@ -93,9 +93,26 @@ export default function Contact() {
                     <option>General fitness</option>
                   </select>
                 </label>
+                <label>Training experience
+                  <select name="experience" defaultValue="Never trained before">
+                    <option>Never trained before</option>
+                    <option>Trained before, but it never stuck</option>
+                    <option>Training now, want better structure</option>
+                    <option>Returning after a break</option>
+                  </select>
+                </label>
               </div>
+              <label>Preferred training times
+                <select name="times" defaultValue="Flexible / varies">
+                  <option>Early morning</option>
+                  <option>Daytime</option>
+                  <option>Evening</option>
+                  <option>Weekends</option>
+                  <option>Flexible / varies</option>
+                </select>
+              </label>
               <label>Anything else I should know?
-                <textarea name="message" placeholder="Experience, injuries, schedule - whatever's useful" />
+                <textarea name="message" placeholder="Injuries, equipment access, or anything else useful" />
               </label>
               <button className="btn" type="submit">Request my free intro call</button>
               <p className={`form-status ${status.kind}`} role="status" aria-live="polite">{status.msg}</p>
